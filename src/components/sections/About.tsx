@@ -2,15 +2,18 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { CheckCircle } from 'lucide-react';
+import { useLanguage } from '@/context/LanguageContext';
 
 const About = () => {
+  const { t } = useLanguage();
+  
   const features = [
-    'Industry-leading data security protocols',
-    'Experienced team of IT professionals',
-    'Customized enterprise solutions',
-    'Dedicated 24/7 technical support',
-    'Continuous innovation and improvement',
-    'Global service delivery capabilities',
+    'features.security',
+    'features.team',
+    'features.solutions',
+    'features.support',
+    'features.innovation',
+    'features.global',
   ];
 
   return (
@@ -31,25 +34,25 @@ const About = () => {
 
           {/* Content Section */}
           <div>
-            <h2 className="mb-6">About Dataproxy Enterprise</h2>
+            <h2 className="mb-6">{t('about.title')}</h2>
             <p className="text-gray-600 mb-6">
-              Founded with a mission to transform how businesses manage and leverage their data, Dataproxy Enterprise has evolved into a leading provider of end-to-end data solutions and IT services for organizations worldwide.
+              {t('about.p1')}
             </p>
             <p className="text-gray-600 mb-8">
-              Our team of experienced professionals combines technical expertise with deep industry knowledge to deliver solutions that drive operational efficiency, enhance decision-making, and accelerate business growth.
+              {t('about.p2')}
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-              {features.map((feature, index) => (
+              {features.map((featureKey, index) => (
                 <div key={index} className="flex items-start">
                   <CheckCircle className="h-6 w-6 text-primary-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-700">{feature}</span>
+                  <span className="text-gray-700">{t(featureKey)}</span>
                 </div>
               ))}
             </div>
 
             <Button className="bg-primary-600 hover:bg-primary-700">
-              Learn More About Us
+              {t('about.learnMore')}
             </Button>
           </div>
         </div>

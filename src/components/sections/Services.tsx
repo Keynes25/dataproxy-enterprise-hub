@@ -2,38 +2,41 @@
 import React from 'react';
 import ServiceCard from '@/components/ui/ServiceCard';
 import { Database, Cloud, Shield, Code, LineChart, CheckCircle } from 'lucide-react';
+import { useLanguage } from '@/context/LanguageContext';
 
 const Services = () => {
+  const { t } = useLanguage();
+  
   const services = [
     {
       icon: Database,
-      title: 'Data Management',
-      description: 'Comprehensive solutions for organizing, storing, and processing your enterprise data assets efficiently.',
+      titleKey: 'services.dataManagement',
+      descriptionKey: 'services.dataManagement.desc',
     },
     {
       icon: Cloud,
-      title: 'Cloud Solutions',
-      description: 'Secure and scalable cloud infrastructure services tailored to your business requirements.',
+      titleKey: 'services.cloudSolutions',
+      descriptionKey: 'services.cloudSolutions.desc',
     },
     {
       icon: Shield,
-      title: 'Cybersecurity',
-      description: 'Advanced security protocols and systems to protect your valuable data and digital assets.',
+      titleKey: 'services.cybersecurity',
+      descriptionKey: 'services.cybersecurity.desc',
     },
     {
       icon: Code,
-      title: 'Enterprise Software',
-      description: 'Custom software development and integration services designed for enterprise-scale operations.',
+      titleKey: 'services.enterpriseSoftware',
+      descriptionKey: 'services.enterpriseSoftware.desc',
     },
     {
       icon: LineChart,
-      title: 'Business Intelligence',
-      description: 'Data analytics and visualization tools that transform raw data into actionable business insights.',
+      titleKey: 'services.businessIntelligence',
+      descriptionKey: 'services.businessIntelligence.desc',
     },
     {
       icon: CheckCircle,
-      title: 'IT Consulting',
-      description: 'Strategic guidance from industry experts to optimize your technology investments and operations.',
+      titleKey: 'services.itConsulting',
+      descriptionKey: 'services.itConsulting.desc',
     },
   ];
 
@@ -41,9 +44,9 @@ const Services = () => {
     <section id="services" className="section-padding bg-white">
       <div className="container mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <h2 className="mb-4">Our Enterprise Solutions</h2>
+          <h2 className="mb-4">{t('services.title')}</h2>
           <p className="text-gray-600 text-lg">
-            Dataproxy Enterprise offers a comprehensive suite of services designed to optimize your data infrastructure and drive business growth.
+            {t('services.description')}
           </p>
         </div>
 
@@ -52,8 +55,8 @@ const Services = () => {
             <ServiceCard
               key={index}
               icon={service.icon}
-              title={service.title}
-              description={service.description}
+              title={t(service.titleKey)}
+              description={t(service.descriptionKey)}
             />
           ))}
         </div>

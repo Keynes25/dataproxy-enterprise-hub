@@ -2,8 +2,11 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import { useLanguage } from '@/context/LanguageContext';
 
 const Hero = () => {
+  const { t } = useLanguage();
+
   return (
     <section 
       id="home" 
@@ -19,23 +22,23 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="max-w-xl animate-slide-up">
             <h1 className="mb-6">
-              <span className="block text-gray-800 mb-2">Enterprise Data Solutions for</span>
-              <span className="gradient-text">Tomorrow's Business Challenges</span>
+              <span className="block text-gray-800 mb-2">{t('hero.subtitle')}</span>
+              <span className="gradient-text">{t('hero.title')}</span>
             </h1>
             <p className="text-lg text-gray-600 mb-8 md:text-xl">
-              Dataproxy Enterprise delivers cutting-edge data management solutions and IT services that transform how businesses leverage their information assets.
+              {t('hero.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-primary-600 hover:bg-primary-700">
-                Our Solutions <ArrowRight className="ml-2 h-5 w-5" />
+                {t('hero.solutions')} <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button size="lg" variant="outline" className="border-primary-600 text-primary-600 hover:bg-primary-50">
-                Contact Us
+                {t('hero.contact')}
               </Button>
             </div>
 
             <div className="mt-12 flex items-center">
-              <p className="text-gray-600 mr-4">Trusted by industry leaders:</p>
+              <p className="text-gray-600 mr-4">{t('hero.trusted')}</p>
               <div className="flex space-x-6">
                 {/* Replace with actual client/partner logos */}
                 <div className="h-8 w-20 bg-gray-400/20 rounded"></div>

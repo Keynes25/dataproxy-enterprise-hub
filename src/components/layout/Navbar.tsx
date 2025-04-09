@@ -2,10 +2,13 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu } from 'lucide-react';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
+import { useLanguage } from '@/context/LanguageContext';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,20 +38,22 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-gray-700 hover:text-primary-600 font-medium">Home</a>
-            <a href="#services" className="text-gray-700 hover:text-primary-600 font-medium">Services</a>
-            <a href="#about" className="text-gray-700 hover:text-primary-600 font-medium">About</a>
-            <a href="#testimonials" className="text-gray-700 hover:text-primary-600 font-medium">Clients</a>
-            <a href="#contact" className="text-gray-700 hover:text-primary-600 font-medium">Contact</a>
+            <a href="#home" className="text-gray-700 hover:text-primary-600 font-medium">{t('nav.home')}</a>
+            <a href="#services" className="text-gray-700 hover:text-primary-600 font-medium">{t('nav.services')}</a>
+            <a href="#about" className="text-gray-700 hover:text-primary-600 font-medium">{t('nav.about')}</a>
+            <a href="#testimonials" className="text-gray-700 hover:text-primary-600 font-medium">{t('nav.clients')}</a>
+            <a href="#contact" className="text-gray-700 hover:text-primary-600 font-medium">{t('nav.contact')}</a>
           </nav>
 
-          {/* Contact Button - Desktop */}
-          <div className="hidden md:block">
-            <Button className="bg-primary-600 hover:bg-primary-700">Get Started</Button>
+          {/* Language Switcher and Contact Button - Desktop */}
+          <div className="hidden md:flex items-center gap-4">
+            <LanguageSwitcher />
+            <Button className="bg-primary-600 hover:bg-primary-700">{t('nav.getStarted')}</Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-4">
+            <LanguageSwitcher />
             <Button
               variant="ghost"
               size="icon"
@@ -69,38 +74,38 @@ const Navbar = () => {
                 className="text-gray-700 hover:text-primary-600 font-medium py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Home
+                {t('nav.home')}
               </a>
               <a 
                 href="#services" 
                 className="text-gray-700 hover:text-primary-600 font-medium py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Services
+                {t('nav.services')}
               </a>
               <a 
                 href="#about" 
                 className="text-gray-700 hover:text-primary-600 font-medium py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                About
+                {t('nav.about')}
               </a>
               <a 
                 href="#testimonials" 
                 className="text-gray-700 hover:text-primary-600 font-medium py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Clients
+                {t('nav.clients')}
               </a>
               <a 
                 href="#contact" 
                 className="text-gray-700 hover:text-primary-600 font-medium py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Contact
+                {t('nav.contact')}
               </a>
               <Button className="bg-primary-600 hover:bg-primary-700 w-full mt-2">
-                Get Started
+                {t('nav.getStarted')}
               </Button>
             </nav>
           </div>

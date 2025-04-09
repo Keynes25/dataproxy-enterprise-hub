@@ -4,6 +4,7 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/componen
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { LucideIcon } from 'lucide-react';
+import { useLanguage } from '@/context/LanguageContext';
 
 interface ServiceCardProps {
   icon: LucideIcon;
@@ -12,6 +13,8 @@ interface ServiceCardProps {
 }
 
 const ServiceCard = ({ icon: Icon, title, description }: ServiceCardProps) => {
+  const { t } = useLanguage();
+  
   return (
     <Card className="border-0 shadow-lg card-hover h-full">
       <CardHeader className="pb-2">
@@ -25,7 +28,7 @@ const ServiceCard = ({ icon: Icon, title, description }: ServiceCardProps) => {
       </CardContent>
       <CardFooter>
         <Button variant="ghost" className="p-0 text-primary-600 hover:text-primary-700 hover:bg-transparent">
-          Learn More <ArrowRight className="ml-1 h-4 w-4" />
+          {t('services.learnMore')} <ArrowRight className="ml-1 h-4 w-4" />
         </Button>
       </CardFooter>
     </Card>
