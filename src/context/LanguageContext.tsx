@@ -21,8 +21,8 @@ const translations = {
     'nav.getStarted': 'Get Started',
     
     // Hero section
-    'hero.subtitle': 'Enterprise Data Solutions for',
-    'hero.title': 'Tomorrow\'s Business Challenges',
+    'hero.subtitle': 'Simplifying Technology,',
+    'hero.title': ' Empowering Solutions',
     'hero.description': 'Dataproxy Enterprise delivers cutting-edge data management solutions and IT services that transform how businesses leverage their information assets.',
     'hero.solutions': 'Our Solutions',
     'hero.contact': 'Contact Us',
@@ -69,11 +69,11 @@ const translations = {
     'nav.getStarted': 'Começar',
     
     // Hero section
-    'hero.subtitle': 'Soluções de Dados Empresariais para',
-    'hero.title': 'Os Desafios Empresariais do Amanhã',
+    'hero.subtitle': 'Simplificando a Tecnologia,',
+    'hero.title': 'Potencializando Soluções',
     'hero.description': 'A Dataproxy Enterprise oferece soluções de gestão de dados de ponta e serviços de TI que transformam a forma como as empresas aproveitam seus ativos de informação.',
     'hero.solutions': 'Nossas Soluções',
-    'hero.contact': 'Contate-nos',
+    'hero.contact': 'Contacte-nos',
     'hero.trusted': 'Confiado por líderes da indústria:',
     
     // Services section
