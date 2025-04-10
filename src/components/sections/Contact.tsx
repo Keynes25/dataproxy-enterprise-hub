@@ -66,9 +66,9 @@ const Contact = () => {
                 <div>
                   <h4 className="font-medium mb-1">{t('contact.info.visit')}</h4>
                   <address className="not-italic text-gray-600">
-                    1234 Tech Boulevard<br />
-                    Silicon Valley, CA 94043<br />
-                    United States
+                    Avenida Samora Machel, nº 323 <br />
+                    1º andar Edifício GAPI <br />
+                    Maputo, Moçambique
                   </address>
                 </div>
               </div>
@@ -78,8 +78,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-medium mb-1">{t('contact.info.call')}</h4>
-                  <p className="text-gray-600">+1 (555) 123-4567</p>
-                  <p className="text-gray-600">+1 (555) 987-6543</p>
+                  <p className="text-gray-600">: + 258 843 334 087</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -88,8 +87,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-medium mb-1">{t('contact.info.email')}</h4>
-                  <p className="text-gray-600">info@dataproxy-enterprise.com</p>
-                  <p className="text-gray-600">support@dataproxy-enterprise.com</p>
+                  <p className="text-gray-600">info@dataproxy.co.mz</p>
+                  <p className="text-gray-600">suporte@dataproxy.co.mz</p>
                 </div>
               </div>
             </div>
