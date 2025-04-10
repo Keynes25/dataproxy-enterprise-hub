@@ -86,7 +86,9 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-start">
                 <MapPin className="h-6 w-6 text-primary-500 mr-2 flex-shrink-0" />
-                <span className="text-gray-300">1234 Tech Boulevard, Silicon Valley, CA 94043</span>
+                <span className="text-gray-300">Avenida Samora Machel, nº 323
+                1º andar Edifício GAPI
+                Maputo, Moçambique</span>
               </div>
               <div className="flex items-center">
                 <Phone className="h-6 w-6 text-primary-500 mr-2" />
