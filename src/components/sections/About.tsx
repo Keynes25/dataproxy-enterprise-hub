@@ -3,6 +3,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { CheckCircle } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   const { t } = useLanguage();
@@ -51,9 +52,11 @@ const About = () => {
               ))}
             </div>
 
-            <Button className="bg-primary-600 hover:bg-primary-700">
-              {t('about.learnMore')}
-            </Button>
+            <Link to="/about-us">
+              <Button className="bg-primary-600 hover:bg-primary-700">
+                {t('about.learnMore')}
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
