@@ -48,7 +48,19 @@ const translations = {
     'services.keyFeatures': 'Key Features',
     
     // Service Details
-    'services.dataManagement.full': 'Our Data Management solutions help organizations effectively organize, protect, and process their valuable data assets. We implement robust database systems, data warehousing solutions, and data governance frameworks to ensure your information is accessible, secure, and compliant with industry regulations.',
+    'services.dataManagement.full': 'Our services encompass the provision of complete management systems, meticulously designed to meet the specific needs of companies in diverse sectors, including billing, human resources, accounting, inventory management and procurement. These solutions are designed based on a deep understanding of the challenges faced by our customers, aiming to offer efficiency, precision and control at all stages of the process.
+
+    Sales System: Increase your sales and improve the customer experience with comprehensive tools to manage leads, opportunities, quotes and orders.
+
+    Procurement System: Optimize the purchasing process, from requisition to payment, ensuring efficient supply of your products and services.
+
+    Inventory Management: Efficiently manage stock, from reception to distribution, ensuring visibility and full control of your assets.
+
+    Customer Relationship Management: Maintain a solid relationship with customers, from acquisition to after-sales support, using tools to manage contacts, tickets and marketing campaigns.
+
+    Human Resources Management: Easily manage employee information, including payroll, vacation, benefits and performance reviews.
+
+Accounting: Full control of your company's finances, including accounting, invoicing, accounts payable and receivable..',
     'services.dataManagement.feature1': 'Enterprise data warehousing and lake solutions',
     'services.dataManagement.feature2': 'Data governance and compliance frameworks',
     'services.dataManagement.feature3': 'Master data management and data quality services',
