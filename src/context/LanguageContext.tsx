@@ -48,7 +48,7 @@ const translations = {
     // About section
     'about.title': 'About Dataproxy Enterprise',
     'about.p1': 'Dataproxy is a company established in Mozambique, dedicated to driving the development and growth of its clients through innovative solutions in the field of Information Technology (IT) as well as the sale of computer equipment.',
-    'about.p2': 'Our mission is to provide services and products that not only meet, but also exceed market expectations, thus contributing to advancement and excellence in all our operations.,
+    'about.p2': 'Our mission is to provide services and products that not only meet, but also exceed market expectations, thus contributing to advancement and excellence in all our operations.',
     'about.learnMore': 'Learn More About Us',
     
     // Features
