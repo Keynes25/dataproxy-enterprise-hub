@@ -19,7 +19,7 @@ const Contact = () => {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="mb-4">Get in Touch</h2>
           <p className="text-gray-600 text-lg">
-            Ready to transform your enterprise data capabilities? Contact us today to discuss how our solutions can address your business challenges.
+            Ready Testtttttttttt to transform your enterprise data capabilities? Contact us today to discuss how our solutions can address your business challenges.
           </p>
         </div>
 
