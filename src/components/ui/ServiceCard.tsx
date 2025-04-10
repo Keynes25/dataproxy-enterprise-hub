@@ -5,14 +5,16 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { LucideIcon } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
+import { Link } from 'react-router-dom';
 
 interface ServiceCardProps {
   icon: LucideIcon;
   title: string;
   description: string;
+  link: string;
 }
 
-const ServiceCard = ({ icon: Icon, title, description }: ServiceCardProps) => {
+const ServiceCard = ({ icon: Icon, title, description, link }: ServiceCardProps) => {
   const { t } = useLanguage();
   
   return (
@@ -27,9 +29,11 @@ const ServiceCard = ({ icon: Icon, title, description }: ServiceCardProps) => {
         <p className="text-gray-600">{description}</p>
       </CardContent>
       <CardFooter>
-        <Button variant="ghost" className="p-0 text-primary-600 hover:text-primary-700 hover:bg-transparent">
-          {t('services.learnMore')} <ArrowRight className="ml-1 h-4 w-4" />
-        </Button>
+        <Link to={link}>
+          <Button variant="ghost" className="p-0 text-primary-600 hover:text-primary-700 hover:bg-transparent">
+            {t('services.learnMore')} <ArrowRight className="ml-1 h-4 w-4" />
+          </Button>
+        </Link>
       </CardFooter>
     </Card>
   );

@@ -12,31 +12,37 @@ const Services = () => {
       icon: Database,
       titleKey: 'services.dataManagement',
       descriptionKey: 'services.dataManagement.desc',
+      link: '/services/data-management'
     },
     {
       icon: Cloud,
       titleKey: 'services.cloudSolutions',
       descriptionKey: 'services.cloudSolutions.desc',
+      link: '/services/cloud-solutions'
     },
     {
       icon: Shield,
       titleKey: 'services.cybersecurity',
       descriptionKey: 'services.cybersecurity.desc',
+      link: '/services/cybersecurity'
     },
     {
       icon: Code,
       titleKey: 'services.enterpriseSoftware',
       descriptionKey: 'services.enterpriseSoftware.desc',
+      link: '/services/enterprise-software'
     },
     {
       icon: LineChart,
       titleKey: 'services.businessIntelligence',
       descriptionKey: 'services.businessIntelligence.desc',
+      link: '/services/business-intelligence'
     },
     {
       icon: CheckCircle,
       titleKey: 'services.itConsulting',
       descriptionKey: 'services.itConsulting.desc',
+      link: '/services/it-consulting'
     },
   ];
 
@@ -57,6 +63,7 @@ const Services = () => {
               icon={service.icon}
               title={t(service.titleKey)}
               description={t(service.descriptionKey)}
+              link={service.link}
             />
           ))}
         </div>

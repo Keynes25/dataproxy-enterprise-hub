@@ -7,6 +7,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "@/context/LanguageContext";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import DataManagement from "./pages/services/DataManagement";
+import CloudSolutions from "./pages/services/CloudSolutions";
+import Cybersecurity from "./pages/services/Cybersecurity";
+import EnterpriseSoftware from "./pages/services/EnterpriseSoftware";
+import BusinessIntelligence from "./pages/services/BusinessIntelligence";
+import ItConsulting from "./pages/services/ItConsulting";
 
 const queryClient = new QueryClient();
 
@@ -17,6 +23,12 @@ const App = () => (
         <TooltipProvider>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/services/data-management" element={<DataManagement />} />
+            <Route path="/services/cloud-solutions" element={<CloudSolutions />} />
+            <Route path="/services/cybersecurity" element={<Cybersecurity />} />
+            <Route path="/services/enterprise-software" element={<EnterpriseSoftware />} />
+            <Route path="/services/business-intelligence" element={<BusinessIntelligence />} />
+            <Route path="/services/it-consulting" element={<ItConsulting />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
