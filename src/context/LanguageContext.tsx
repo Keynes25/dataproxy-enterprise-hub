@@ -227,8 +227,8 @@ const translations = {
     'contact.info.call': 'Ligue para Nós',
     'contact.info.email': 'E-mail para Contato',
     'contact.info.hours': 'Horário de Funcionamento',
-    'contact.info.weekdays': 'Segunda - Sexta: 9:00 - 18:00',
-    'contact.info.saturday': 'Sábado: 10:00 - 16:00',
+    'contact.info.weekdays': 'Segunda - Sexta: 7:00 - 17:00',
+    'contact.info.saturday': 'Sábado: 8:00 - 12:00',
     'contact.info.sunday': 'Domingo: Fechado',
     'contact.getInTouch': 'Entre em Contato',
     
