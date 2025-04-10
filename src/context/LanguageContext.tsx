@@ -58,6 +58,38 @@ const translations = {
     'features.support': 'Dedicated 24/7 technical support',
     'features.innovation': 'Continuous innovation and improvement',
     'features.global': 'Global service delivery capabilities',
+
+    // Testimonials section
+    'testimonials.title': 'What Our Clients Say',
+    'testimonials.description': 'Discover how Dataproxy Enterprise has helped organizations across industries overcome their data challenges and achieve their business objectives.',
+    'testimonials.trustedBy': 'Trusted by Leading Organizations',
+
+    // Contact section
+    'contact.title': 'Get in Touch',
+    'contact.description': 'Ready to transform your enterprise data capabilities? Contact us today to discuss how our solutions can address your business challenges.',
+    'contact.form.title': 'Send us a Message',
+    'contact.form.name': 'Name',
+    'contact.form.email': 'Email',
+    'contact.form.subject': 'Subject',
+    'contact.form.subject.placeholder': 'How can we help you?',
+    'contact.form.message': 'Message',
+    'contact.form.message.placeholder': 'Your message...',
+    'contact.form.send': 'Send Message',
+    'contact.info.title': 'Contact Information',
+    'contact.info.visit': 'Visit Us',
+    'contact.info.call': 'Call Us',
+    'contact.info.email': 'Email Us',
+    'contact.info.hours': 'Business Hours',
+    'contact.info.weekdays': 'Monday - Friday: 9:00 AM - 6:00 PM',
+    'contact.info.saturday': 'Saturday: 10:00 AM - 4:00 PM',
+    'contact.info.sunday': 'Sunday: Closed',
+
+    // Footer
+    'footer.about': 'Empowering businesses with innovative data solutions and enterprise-grade IT services.',
+    'footer.quickLinks': 'Quick Links',
+    'footer.ourServices': 'Our Services',
+    'footer.contactUs': 'Contact Us',
+    'footer.rights': 'All rights reserved.',
   },
   pt: {
     // Navigation
@@ -96,7 +128,7 @@ const translations = {
     // About section
     'about.title': 'Sobre a Dataproxy Enterprise',
     'about.p1': 'A Dataproxy é uma empresa estabelecida em Moçambique, dedicada a impulsionar o desenvolvimento e crescimento de seus clientes por meio de soluções inovadoras no campo da Tecnologia da Informação (TI) assim como venda de equipamentos informáticos.',
-    'about.p2': 'Nossa missão é proporcionar serviços e produtos que não apenas atendam, mas também superem as expectativas do mercado, contribuindo assim para o avanço e a excelência em todas as nossas operações.',
+    'about.p2': 'Nossa missão é proporcionar serviços e produtos que não apenas atendam, mas também superem as expectativas do mercado, contribuindo assim para o avanço e a excelência em todas as nossas operações.',
     'about.learnMore': 'Saiba Mais Sobre Nós',
     
     // Features
@@ -106,6 +138,38 @@ const translations = {
     'features.support': 'Suporte técnico dedicado 24/7',
     'features.innovation': 'Inovação e melhoria contínuas',
     'features.global': 'Capacidades de entrega de serviços globais',
+
+    // Testimonials section
+    'testimonials.title': 'O Que Nossos Clientes Dizem',
+    'testimonials.description': 'Descubra como a Dataproxy Enterprise tem ajudado organizações de diversos setores a superar seus desafios de dados e alcançar seus objetivos de negócios.',
+    'testimonials.trustedBy': 'Confiada por Organizações Líderes',
+
+    // Contact section
+    'contact.title': 'Entre em Contato',
+    'contact.description': 'Pronto para transformar as capacidades de dados da sua empresa? Entre em contato hoje para discutir como nossas soluções podem resolver seus desafios de negócios.',
+    'contact.form.title': 'Envie-nos uma Mensagem',
+    'contact.form.name': 'Nome',
+    'contact.form.email': 'E-mail',
+    'contact.form.subject': 'Assunto',
+    'contact.form.subject.placeholder': 'Como podemos ajudá-lo?',
+    'contact.form.message': 'Mensagem',
+    'contact.form.message.placeholder': 'Sua mensagem...',
+    'contact.form.send': 'Enviar Mensagem',
+    'contact.info.title': 'Informações de Contato',
+    'contact.info.visit': 'Visite-nos',
+    'contact.info.call': 'Ligue para Nós',
+    'contact.info.email': 'E-mail para Contato',
+    'contact.info.hours': 'Horário de Funcionamento',
+    'contact.info.weekdays': 'Segunda - Sexta: 9:00 - 18:00',
+    'contact.info.saturday': 'Sábado: 10:00 - 16:00',
+    'contact.info.sunday': 'Domingo: Fechado',
+
+    // Footer
+    'footer.about': 'Capacitando empresas com soluções inovadoras de dados e serviços de TI de nível empresarial.',
+    'footer.quickLinks': 'Links Rápidos',
+    'footer.ourServices': 'Nossos Serviços',
+    'footer.contactUs': 'Contate-nos',
+    'footer.rights': 'Todos os direitos reservados.',
   }
 };
 

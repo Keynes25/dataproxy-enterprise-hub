@@ -1,8 +1,10 @@
 
 import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { useLanguage } from '@/context/LanguageContext';
 
 const Footer = () => {
+  const { t } = useLanguage();
   const year = new Date().getFullYear();
   
   return (
@@ -13,7 +15,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Dataproxy Enterprise</h3>
             <p className="text-gray-300 mb-4">
-              Empowering businesses with innovative data solutions and enterprise-grade IT services.
+              {t('footer.about')}
             </p>
             <div className="flex space-x-4">
               <a href="#" aria-label="Facebook" className="text-gray-300 hover:text-primary-500">
@@ -36,51 +38,51 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Quick Links</h3>
+            <h3 className="text-xl font-bold mb-4">{t('footer.quickLinks')}</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#home" className="text-gray-300 hover:text-primary-500">Home</a>
+                <a href="#home" className="text-gray-300 hover:text-primary-500">{t('nav.home')}</a>
               </li>
               <li>
-                <a href="#services" className="text-gray-300 hover:text-primary-500">Services</a>
+                <a href="#services" className="text-gray-300 hover:text-primary-500">{t('nav.services')}</a>
               </li>
               <li>
-                <a href="#about" className="text-gray-300 hover:text-primary-500">About Us</a>
+                <a href="#about" className="text-gray-300 hover:text-primary-500">{t('nav.about')}</a>
               </li>
               <li>
-                <a href="#testimonials" className="text-gray-300 hover:text-primary-500">Clients</a>
+                <a href="#testimonials" className="text-gray-300 hover:text-primary-500">{t('nav.clients')}</a>
               </li>
               <li>
-                <a href="#contact" className="text-gray-300 hover:text-primary-500">Contact Us</a>
+                <a href="#contact" className="text-gray-300 hover:text-primary-500">{t('nav.contact')}</a>
               </li>
             </ul>
           </div>
 
           {/* Services */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Our Services</h3>
+            <h3 className="text-xl font-bold mb-4">{t('footer.ourServices')}</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-gray-300 hover:text-primary-500">Data Management</a>
+                <a href="#" className="text-gray-300 hover:text-primary-500">{t('services.dataManagement')}</a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-primary-500">Cloud Solutions</a>
+                <a href="#" className="text-gray-300 hover:text-primary-500">{t('services.cloudSolutions')}</a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-primary-500">Cybersecurity</a>
+                <a href="#" className="text-gray-300 hover:text-primary-500">{t('services.cybersecurity')}</a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-primary-500">Enterprise Software</a>
+                <a href="#" className="text-gray-300 hover:text-primary-500">{t('services.enterpriseSoftware')}</a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-primary-500">IT Consulting</a>
+                <a href="#" className="text-gray-300 hover:text-primary-500">{t('services.itConsulting')}</a>
               </li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Contact Us</h3>
+            <h3 className="text-xl font-bold mb-4">{t('footer.contactUs')}</h3>
             <div className="space-y-4">
               <div className="flex items-start">
                 <MapPin className="h-6 w-6 text-primary-500 mr-2 flex-shrink-0" />
@@ -99,7 +101,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; {year} Dataproxy Enterprise. All rights reserved.</p>
+          <p>&copy; {year} Dataproxy Enterprise. {t('footer.rights')}</p>
         </div>
       </div>
     </footer>
