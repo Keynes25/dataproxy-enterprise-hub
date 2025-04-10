@@ -48,9 +48,9 @@ const translations = {
     'services.keyFeatures': 'Key Features',
     
     // Service Details
-    'services.dataManagement.full': 'Our services encompass the provision of complete management systems, meticulously designed to meet the specific needs of companies in diverse sectors, including billing, human resources, accounting, inventory management and procurement. These solutions are designed based on a deep understanding of the challenges faced by our customers, aiming to offer efficiency, precision and control at all stages of the process.
+    'services.dataManagement.full': 'Our services encompass the provision of complete management systems, meticulously designed to meet the specific needs of companies in diverse sectors, including billing, human resources, accounting, inventory management and procurement. These solutions are designed based on a deep understanding of the challenges faced by our customers, aiming to offer efficiency, precision and control at all stages of the process Sales System: Increase your sales and improve the customer experience with comprehensive tools to manage leads, opportunities, quotes and orders.',
 
-    Sales System: Increase your sales and improve the customer experience with comprehensive tools to manage leads, opportunities, quotes and orders.
+    
 
     Procurement System: Optimize the purchasing process, from requisition to payment, ensuring efficient supply of your products and services.
 
