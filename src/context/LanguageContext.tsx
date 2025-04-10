@@ -113,8 +113,8 @@ const translations = {
     'contact.info.call': 'Call Us',
     'contact.info.email': 'Email Contact',
     'contact.info.hours': 'Hours of Operation',
-    'contact.info.weekdays': 'Monday - Friday: 9am - 6pm',
-    'contact.info.saturday': 'Saturday: 10am - 4pm',
+    'contact.info.weekdays': 'Monday - Friday: 7am - 5pm',
+    'contact.info.saturday': 'Saturday: 8am - 12pm',
     'contact.info.sunday': 'Sunday: Closed',
     'contact.getInTouch': 'Get in Touch',
     
