@@ -18,7 +18,7 @@ const Testimonials = () => {
     },
     {
       quote: "Working with Dataproxy Enterprise on our cloud migration was seamless. Their team's expertise and support throughout the process exceeded our expectations.",
-      name: "David Rodriguez",
+      name: "Lucas Paketaaaa",
       role: "Operations Manager",
       company: "Retail Innovations Inc",
     },
