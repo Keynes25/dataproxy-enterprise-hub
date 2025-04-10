@@ -53,7 +53,7 @@ const translations = {
     'services.dataManagement.feature2': 'Data governance and compliance frameworks',
     'services.dataManagement.feature3': 'Master data management and data quality services',
     
-    'services.cloudSolutions.full': 'Our Cloud Solutions provide flexible, scalable infrastructure that adapts to your business needs. Whether you're migrating existing systems to the cloud or building cloud-native applications, our expert team ensures smooth deployment, optimal performance, and cost-effective operations.',
+    'services.cloudSolutions.full': "Our Cloud Solutions provide flexible, scalable infrastructure that adapts to your business needs. Whether you're migrating existing systems to the cloud or building cloud-native applications, our expert team ensures smooth deployment, optimal performance, and cost-effective operations.",
     'services.cloudSolutions.feature1': 'Hybrid and multi-cloud architecture design',
     'services.cloudSolutions.feature2': 'Cloud migration and optimization services',
     'services.cloudSolutions.feature3': 'Managed cloud infrastructure and monitoring',
@@ -99,7 +99,7 @@ const translations = {
     
     // Contact
     'contact.title': 'Get in Touch',
-    'contact.description': 'Ready to transform your enterprise's data capabilities? Contact us today to discuss how our solutions can address your business challenges.',
+    'contact.description': "Ready to transform your enterprise's data capabilities? Contact us today to discuss how our solutions can address your business challenges.",
     'contact.form.title': 'Send Us a Message',
     'contact.form.name': 'Name',
     'contact.form.email': 'Email',
@@ -123,7 +123,7 @@ const translations = {
     'footer.quickLinks': 'Quick Links',
     'footer.ourServices': 'Our Services',
     'footer.contactUs': 'Contact Us',
-    'footer.rights': 'All rights reserved.',
+    'footer.rights': 'All rights reserved.'
   },
   pt: {
     // Navigation
@@ -237,7 +237,7 @@ const translations = {
     'footer.quickLinks': 'Links Rápidos',
     'footer.ourServices': 'Nossos Serviços',
     'footer.contactUs': 'Contate-nos',
-    'footer.rights': 'Todos os direitos reservados.',
+    'footer.rights': 'Todos os direitos reservados.'
   }
 };
 
