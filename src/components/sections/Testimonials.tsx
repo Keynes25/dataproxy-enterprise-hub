@@ -11,8 +11,8 @@ const Testimonials = () => {
       company: "Global Finance Corp",
     },
     {
-      quote: "The cybersecurity solutions implemented by Dataproxy Enterprise have given us peace of mind knowing our sensitive data is protected by industry-leading security protocols.",
-      name: "Michael Chen",
+      quote: "The Mauuuuuuuu cybersecurity solutions implemented by Dataproxy Enterprise have given us peace of mind knowing our sensitive data is protected by industry-leading security protocols.",
+      name: "Fausto",
       role: "IT Director",
       company: "HealthTech Solutions",
     },
