@@ -47,8 +47,8 @@ const translations = {
     
     // About section
     'about.title': 'About Dataproxy Enterprise',
-    'about.p1': 'Founded with a mission to transform how businesses manage and leverage their data, Dataproxy Enterprise has evolved into a leading provider of end-to-end data solutions and IT services for organizations worldwide.',
-    'about.p2': 'Our team of experienced professionals combines technical expertise with deep industry knowledge to deliver solutions that drive operational efficiency, enhance decision-making, and accelerate business growth.',
+    'about.p1': 'Dataproxy is a company established in Mozambique, dedicated to driving the development and growth of its clients through innovative solutions in the field of Information Technology (IT) as well as the sale of computer equipment.',
+    'about.p2': 'Our mission is to provide services and products that not only meet, but also exceed market expectations, thus contributing to advancement and excellence in all our operations.,
     'about.learnMore': 'Learn More About Us',
     
     // Features
@@ -95,8 +95,8 @@ const translations = {
     
     // About section
     'about.title': 'Sobre a Dataproxy Enterprise',
-    'about.p1': 'Fundada com a missão de transformar como as empresas gerenciam e aproveitam seus dados, a Dataproxy Enterprise evoluiu para se tornar um fornecedor líder de soluções de dados e serviços de TI para organizações em todo o mundo.',
-    'about.p2': 'Nossa equipe de profissionais experientes combina expertise técnica com conhecimento profundo do setor para entregar soluções que impulsionam a eficiência operacional, melhoram a tomada de decisões e aceleram o crescimento dos negócios.',
+    'about.p1': 'A Dataproxy é uma empresa estabelecida em Moçambique, dedicada a impulsionar o desenvolvimento e crescimento de seus clientes por meio de soluções inovadoras no campo da Tecnologia da Informação (TI) assim como venda de equipamentos informáticos.',
+    'about.p2': 'Nossa missão é proporcionar serviços e produtos que não apenas atendam, mas também superem as expectativas do mercado, contribuindo assim para o avanço e a excelência em todas as nossas operações.',
     'about.learnMore': 'Saiba Mais Sobre Nós',
     
     // Features
