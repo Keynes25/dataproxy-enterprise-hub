@@ -5,8 +5,8 @@ import TestimonialCard from '@/components/ui/TestimonialCard';
 const Testimonials = () => {
   const testimonials = [
     {
-      quote: "Dataproxy Enterprise transformed our data management infrastructure, resulting in a 40% increase in operational efficiency and significant cost savings.",
-      name: "Sarah Johnson",
+      quote: "Dataproxy Enterpriseeeeeeeeeee transformed our data management infrastructure, resulting in a 40% increase in operational efficiency and significant cost savings.",
+      name: "Keynes",
       role: "CTO",
       company: "Global Finance Corp",
     },
