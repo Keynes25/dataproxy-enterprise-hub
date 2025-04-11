@@ -30,10 +30,7 @@ const EnterpriseSoftware = () => {
             <div>
               <h1 className="text-3xl md:text-4xl font-bold mb-6">{t('services.enterpriseSoftware')}</h1>
               <p className="text-lg text-gray-700 mb-6 text-justify">
-                Oferecemos serviços de hospedagem de websites confiáveis, com alta disponibilidade 
-                e desempenho robusto. Nossa infraestrutura redundante garante que seu site 
-                permaneça online e acessível 24 horas por dia, 7 dias por semana, 
-                com suporte técnico dedicado e monitoramento constante.
+                {t('services.enterpriseSoftware.full')}
               </p>
               
               <div className="space-y-6 mb-8">
@@ -44,55 +41,55 @@ const EnterpriseSoftware = () => {
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Check className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span>Hospedagem em servidores de alto desempenho com 99.9% de uptime</span>
+                      <span>{t('services.enterpriseSoftware.feature1')}</span>
                     </li>
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Check className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span>Certificados SSL gratuitos para garantir a segurança do seu website</span>
+                      <span>{t('services.enterpriseSoftware.feature2')}</span>
                     </li>
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Check className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span>Backup diário automatizado e proteção contra malware</span>
+                      <span>{t('services.enterpriseSoftware.feature3')}</span>
                     </li>
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Check className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span>Suporte técnico 24/7 e painel de controle intuitivo</span>
+                      <span>{t('services.enterpriseSoftware.feature4')}</span>
                     </li>
                   </ul>
                 </div>
                 
                 <div className="border-l-4 border-primary-600 pl-4">
-                  <h2 className="text-xl font-semibold mb-2">Nossos Planos</h2>
+                  <h2 className="text-xl font-semibold mb-2">{t('services.enterpriseSoftware.plans')}</h2>
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Globe className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span><strong>Básico:</strong> Ideal para sites pessoais e pequenos negócios</span>
+                      <span><strong>{t('services.enterpriseSoftware.basic')}:</strong> {t('services.enterpriseSoftware.basicDesc')}</span>
                     </li>
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Server className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span><strong>Empresarial:</strong> Para sites corporativos com tráfego médio</span>
+                      <span><strong>{t('services.enterpriseSoftware.business')}:</strong> {t('services.enterpriseSoftware.businessDesc')}</span>
                     </li>
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Cloud className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span><strong>Premium:</strong> Soluções escaláveis para e-commerce e aplicações web</span>
+                      <span><strong>{t('services.enterpriseSoftware.premium')}:</strong> {t('services.enterpriseSoftware.premiumDesc')}</span>
                     </li>
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Shield className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span><strong>Dedicado:</strong> Servidores dedicados para máximo desempenho</span>
+                      <span><strong>{t('services.enterpriseSoftware.dedicated')}:</strong> {t('services.enterpriseSoftware.dedicatedDesc')}</span>
                     </li>
                   </ul>
                 </div>
@@ -103,7 +100,7 @@ const EnterpriseSoftware = () => {
             <div className="flex justify-center items-center">
               <img 
                 src="https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
-                alt="Serviços de hospedagem de websites" 
+                alt={t('services.enterpriseSoftware')}
                 className="rounded-lg shadow-lg w-full object-cover"
                 style={{ maxHeight: '500px' }}
               />
@@ -111,36 +108,30 @@ const EnterpriseSoftware = () => {
           </div>
           
           <div className="mt-16">
-            <h2 className="text-2xl font-bold mb-6">Por que escolher nossos serviços de hospedagem?</h2>
+            <h2 className="text-2xl font-bold mb-6">{t('services.enterpriseSoftware.whyChoose')}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold mb-3">Desempenho Superior</h3>
+                <h3 className="text-xl font-semibold mb-3">{t('services.enterpriseSoftware.performance')}</h3>
                 <p className="text-justify">
-                  Utilizamos tecnologia de ponta para garantir que seus websites carreguem rapidamente e operem com eficiência. 
-                  Nossos servidores são otimizados para fornecer tempos de resposta rápidos e uma experiência de usuário impecável 
-                  para seus visitantes.
+                  {t('services.enterpriseSoftware.performanceDesc')}
                 </p>
               </div>
               <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold mb-3">Segurança Avançada</h3>
+                <h3 className="text-xl font-semibold mb-3">{t('services.enterpriseSoftware.security')}</h3>
                 <p className="text-justify">
-                  Protegemos seu site contra ameaças com firewalls avançados, proteção contra DDoS, 
-                  verificações regulares de segurança e certificados SSL gratuitos. Sua tranquilidade é nossa prioridade.
+                  {t('services.enterpriseSoftware.securityDesc')}
                 </p>
               </div>
               <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold mb-3">Suporte Especializado</h3>
+                <h3 className="text-xl font-semibold mb-3">{t('services.enterpriseSoftware.support')}</h3>
                 <p className="text-justify">
-                  Nossa equipe de suporte técnico está disponível 24/7 para ajudar com qualquer problema ou dúvida. 
-                  Oferecemos assistência personalizada para garantir que seu website esteja sempre funcionando perfeitamente.
+                  {t('services.enterpriseSoftware.supportDesc')}
                 </p>
               </div>
               <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h3 className="text-xl font-semibold mb-3">Escalabilidade</h3>
+                <h3 className="text-xl font-semibold mb-3">{t('services.enterpriseSoftware.scalability')}</h3>
                 <p className="text-justify">
-                  À medida que seu negócio cresce, seus recursos de hospedagem podem ser facilmente escalados. 
-                  Nossas soluções flexíveis permitem que você aumente recursos conforme necessário, 
-                  sem interrupções no serviço.
+                  {t('services.enterpriseSoftware.scalabilityDesc')}
                 </p>
               </div>
             </div>

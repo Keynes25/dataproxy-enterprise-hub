@@ -112,7 +112,7 @@ const CloudSolutions = () => {
             <div className="flex justify-center items-center">
               <img 
                 src="https://images.unsplash.com/photo-1600132806608-231446b2e7af?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
-                alt="Desenvolvimento de software" 
+                alt={t('services.cloudSolutions')}
                 className="rounded-lg shadow-lg w-full object-cover"
                 style={{ maxHeight: '500px' }}
               />
@@ -120,7 +120,7 @@ const CloudSolutions = () => {
           </div>
           
           <div className="mt-16">
-            <h2 className="text-2xl font-bold mb-6">Tecnologias que Utilizamos</h2>
+            <h2 className="text-2xl font-bold mb-6">{t('services.cloudSolutions.technologies')}</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
               <div className="bg-gray-50 p-6 rounded-lg shadow-sm text-center hover:bg-gray-100 transition-colors">
                 <h3 className="text-xl font-semibold mb-3">Frontend</h3>
@@ -135,7 +135,7 @@ const CloudSolutions = () => {
                 <p className="text-gray-600">React Native, Flutter, Swift, Kotlin, Xamarin</p>
               </div>
               <div className="bg-gray-50 p-6 rounded-lg shadow-sm text-center hover:bg-gray-100 transition-colors">
-                <h3 className="text-xl font-semibold mb-3">Banco de Dados</h3>
+                <h3 className="text-xl font-semibold mb-3">{t('services.cloudSolutions.database')}</h3>
                 <p className="text-gray-600">MySQL, PostgreSQL, MongoDB, SQL Server, Oracle, Redis</p>
               </div>
             </div>
