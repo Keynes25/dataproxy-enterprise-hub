@@ -31,15 +31,15 @@ const translations = {
     // Services section
     'services.title': 'Our Enterprise Solutions',
     'services.description': 'Dataproxy Enterprise offers a comprehensive suite of services designed to optimize your data infrastructure and drive business growth.',
-    'services.dataManagement': 'Management System ',
+    'services.dataManagement': 'Management System',
     'services.dataManagement.desc': 'Solution designed to streamline your business operations, enhance productivity, and improve decision-making by integrating and automating key processes across your organization',
-    'services.cloudSolutions': 'Software development',
+    'services.cloudSolutions': 'Software Development',
     'services.cloudSolutions.desc': 'Custom software development solutions designed to meet your unique business needs, delivering high-quality, scalable, and efficient applications that drive growth and innovation',
     'services.cybersecurity': 'IT Consulting and Support',
     'services.cybersecurity.desc': 'Expert IT consulting and support services to optimize your technology infrastructure, ensuring seamless operations, strategic planning, and robust solutions for business success.',
     'services.enterpriseSoftware': 'Website Hosting',
     'services.enterpriseSoftware.desc': 'Reliable website hosting services offering fast, secure, and scalable solutions to ensure your website runs smoothly, with minimal downtime and maximum performance.',
-    'services.businessIntelligence': 'Sale of computer equipment',
+    'services.businessIntelligence': 'Sale of Computer Equipment',
     'services.businessIntelligence.desc': 'High-quality computer equipment sales offering the latest technology and reliable hardware solutions to meet your business and personal computing needs.',
     'services.itConsulting': 'Website Creation',
     'services.itConsulting.desc': 'Professional website creation services to build visually appealing, user-friendly, and responsive websites tailored to your business needs, ensuring an exceptional online presence.',
@@ -49,7 +49,7 @@ const translations = {
     'about.backToHome': 'Back to Home',
     
     // Service Details
-    'services.dataManagement.full': 'Our services encompass the provision of complete management systems, meticulously designed to meet the specific needs of companies in diverse sectors, including billing, human resources, accounting, inventory management and procurement. These solutions are designed based on a deep understanding of the challenges faced by our customers, aiming to offer efficiency, precision and control at all stages of the process Sales System: Increase your sales and improve the customer experience with comprehensive tools to manage leads, opportunities, quotes and orders.',
+    'services.dataManagement.full': 'Our services encompass the provision of complete management systems, meticulously designed to meet the specific needs of companies in diverse sectors, including billing, human resources, accounting, inventory management and procurement. These solutions are designed based on a deep understanding of the challenges faced by our customers, aiming to offer efficiency, precision and control at all stages of the process. Sales System: Increase your sales and improve the customer experience with comprehensive tools to manage leads, opportunities, quotes and orders.',
     'services.dataManagement.feature1': 'Enterprise data warehousing and lake solutions',
     'services.dataManagement.feature2': 'Data governance and compliance frameworks',
     'services.dataManagement.feature3': 'Master data management and data quality services',
@@ -164,7 +164,7 @@ const translations = {
     'about.backToHome': 'Voltar para Página Inicial',
     
     // Service Details
-    'services.dataManagement.full': 'Nossos serviços abrangem o fornecimento de sistemas de gestão completos, meticulosamente projetados para atender às necessidades específicas de empresas em diversos setores, incluindo faturamento, recursos humanos, contabilidade, gestão de inventário e compras. Essas soluções são projetadas com base em uma compreensão profunda dos desafios enfrentados pelos nossos clientes, visando oferecer eficiência, precisão e controle em todas as etapas do processo Sistema de Vendas: Aumente suas vendas e melhore a experiência do cliente com ferramentas abrangentes para gerenciar leads, oportunidades, cotações e pedidos.',
+    'services.dataManagement.full': 'Nossos serviços abrangem o fornecimento de sistemas de gestão completos, meticulosamente projetados para atender às necessidades específicas de empresas em diversos setores, incluindo faturamento, recursos humanos, contabilidade, gestão de inventário e compras. Essas soluções são projetadas com base em uma compreensão profunda dos desafios enfrentados pelos nossos clientes, visando oferecer eficiência, precisão e controle em todas as etapas do processo. Sistema de Vendas: Aumente suas vendas e melhore a experiência do cliente com ferramentas abrangentes para gerenciar leads, oportunidades, cotações e pedidos.',
     'services.dataManagement.feature1': 'Soluções de armazenamento e lago de dados empresariais',
     'services.dataManagement.feature2': 'Estruturas de governança e conformidade de dados',
     'services.dataManagement.feature3': 'Gerenciamento de dados mestre e serviços de qualidade de dados',
@@ -246,7 +246,7 @@ const translations = {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{children: ReactNode}> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('pt'); // Changed default language to 'pt'
+  const [language, setLanguage] = useState<Language>('pt'); // Default language is Portuguese
 
   const t = (key: string): string => {
     return translations[language][key] || key;
