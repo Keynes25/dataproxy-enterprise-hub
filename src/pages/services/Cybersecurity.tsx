@@ -28,25 +28,21 @@ const Cybersecurity = () => {
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h1 className="text-3xl md:text-4xl font-bold mb-6">Consultoria de TI e Suporte</h1>
+              <h1 className="text-3xl md:text-4xl font-bold mb-6">{t('services.cybersecurity')}</h1>
               <p className="text-lg text-gray-700 mb-6 text-justify">
-                A Dataproxy oferece serviços completos de consultoria e suporte em TI para 
-                garantir que sua infraestrutura tecnológica funcione perfeitamente e esteja 
-                alinhada com os objetivos do seu negócio. Nossa equipe de especialistas está 
-                pronta para ajudar sua organização a maximizar o retorno sobre o investimento 
-                em tecnologia, minimizando riscos e otimizando processos.
+                {t('services.cybersecurity.full')}
               </p>
               
               <div className="space-y-6 mb-8">
                 <div className="border-l-4 border-primary-600 pl-4">
-                  <h2 className="text-xl md:text-2xl font-semibold mb-2">Serviços Oferecidos</h2>
+                  <h2 className="text-xl md:text-2xl font-semibold mb-2">{t('services.cybersecurity.services')}</h2>
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <HelpCircle className="h-4 w-4 text-primary-600" />
                       </div>
                       <div>
-                        <strong>Consultoria Estratégica:</strong> <span>Avaliação de infraestrutura, planejamento tecnológico e alinhamento com objetivos de negócios.</span>
+                        <strong>{t('services.cybersecurity.strategicConsulting')}:</strong> <span>{t('services.cybersecurity.consultingDesc')}</span>
                       </div>
                     </li>
                     <li className="flex items-start">
@@ -54,7 +50,7 @@ const Cybersecurity = () => {
                         <PhoneCall className="h-4 w-4 text-primary-600" />
                       </div>
                       <div>
-                        <strong>Suporte Técnico:</strong> <span>Suporte remoto e presencial para resolução de problemas, manutenção preventiva e corretiva.</span>
+                        <strong>{t('services.cybersecurity.techSupport')}:</strong> <span>{t('services.cybersecurity.techSupportDesc')}</span>
                       </div>
                     </li>
                     <li className="flex items-start">
@@ -62,7 +58,7 @@ const Cybersecurity = () => {
                         <BarChart className="h-4 w-4 text-primary-600" />
                       </div>
                       <div>
-                        <strong>Otimização de Sistemas:</strong> <span>Análise de desempenho, implementação de melhorias e recomendações para aumento de eficiência.</span>
+                        <strong>{t('services.cybersecurity.optimization')}:</strong> <span>{t('services.cybersecurity.optimizationDesc')}</span>
                       </div>
                     </li>
                     <li className="flex items-start">
@@ -70,38 +66,38 @@ const Cybersecurity = () => {
                         <Pencil className="h-4 w-4 text-primary-600" />
                       </div>
                       <div>
-                        <strong>Treinamento:</strong> <span>Capacitação da sua equipe para utilizar eficientemente as soluções tecnológicas implementadas.</span>
+                        <strong>{t('services.cybersecurity.training')}:</strong> <span>{t('services.cybersecurity.trainingDesc')}</span>
                       </div>
                     </li>
                   </ul>
                 </div>
                 
                 <div className="border-l-4 border-primary-600 pl-4">
-                  <h2 className="text-xl font-semibold mb-2">Benefícios</h2>
+                  <h2 className="text-xl font-semibold mb-2">{t('services.cybersecurity.benefits')}</h2>
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Check className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span>Redução de custos operacionais e tempos de inatividade</span>
+                      <span>{t('services.cybersecurity.benefit1')}</span>
                     </li>
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Check className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span>Aumento da produtividade e eficiência de processos</span>
+                      <span>{t('services.cybersecurity.benefit2')}</span>
                     </li>
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Check className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span>Acesso a conhecimento especializado sem necessidade de contratações</span>
+                      <span>{t('services.cybersecurity.benefit3')}</span>
                     </li>
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Check className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span>Foco no seu core business enquanto cuidamos da sua TI</span>
+                      <span>{t('services.cybersecurity.benefit4')}</span>
                     </li>
                   </ul>
                 </div>
@@ -112,7 +108,7 @@ const Cybersecurity = () => {
             <div className="flex justify-center items-center">
               <img 
                 src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
-                alt="Consultoria de TI e suporte" 
+                alt={t('services.cybersecurity')}
                 className="rounded-lg shadow-lg w-full object-cover"
                 style={{ maxHeight: '500px' }}
               />
@@ -120,93 +116,93 @@ const Cybersecurity = () => {
           </div>
           
           <div className="mt-16">
-            <h2 className="text-2xl font-bold mb-6">Nossos Planos de Suporte</h2>
+            <h2 className="text-2xl font-bold mb-6">{t('services.cybersecurity.supportPlans')}</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="text-xl font-semibold mb-3 text-center">Básico</h3>
-                <div className="text-3xl font-bold text-center mb-6">Sob Consulta</div>
+                <h3 className="text-xl font-semibold mb-3 text-center">{t('services.cybersecurity.basic')}</h3>
+                <div className="text-3xl font-bold text-center mb-6">{t('services.cybersecurity.contactForPrice')}</div>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center">
                     <Check className="h-5 w-5 text-green-500 mr-2" />
-                    <span>Suporte remoto em horário comercial</span>
+                    <span>{t('services.cybersecurity.basicFeature1')}</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="h-5 w-5 text-green-500 mr-2" />
-                    <span>Tempo de resposta em até 24 horas</span>
+                    <span>{t('services.cybersecurity.basicFeature2')}</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="h-5 w-5 text-green-500 mr-2" />
-                    <span>Monitoramento básico</span>
+                    <span>{t('services.cybersecurity.basicFeature3')}</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="h-5 w-5 text-green-500 mr-2" />
-                    <span>Relatórios mensais</span>
+                    <span>{t('services.cybersecurity.basicFeature4')}</span>
                   </li>
                 </ul>
-                <Button className="w-full">Solicitar Orçamento</Button>
+                <Button className="w-full">{t('services.cybersecurity.getQuote')}</Button>
               </div>
               
               <div className="border rounded-lg p-6 shadow-md bg-primary-50 border-primary-200 relative hover:shadow-lg transition-shadow">
                 <div className="absolute -top-3 left-0 right-0 flex justify-center">
-                  <span className="bg-primary-600 text-white px-4 py-1 rounded-full text-sm">Mais Popular</span>
+                  <span className="bg-primary-600 text-white px-4 py-1 rounded-full text-sm">{t('services.cybersecurity.mostPopular')}</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-3 text-center">Empresarial</h3>
-                <div className="text-3xl font-bold text-center mb-6">Sob Consulta</div>
+                <h3 className="text-xl font-semibold mb-3 text-center">{t('services.cybersecurity.business')}</h3>
+                <div className="text-3xl font-bold text-center mb-6">{t('services.cybersecurity.contactForPrice')}</div>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center">
                     <Check className="h-5 w-5 text-green-500 mr-2" />
-                    <span>Suporte remoto e presencial</span>
+                    <span>{t('services.cybersecurity.businessFeature1')}</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="h-5 w-5 text-green-500 mr-2" />
-                    <span>Tempo de resposta em até 4 horas</span>
+                    <span>{t('services.cybersecurity.businessFeature2')}</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="h-5 w-5 text-green-500 mr-2" />
-                    <span>Monitoramento avançado 24/7</span>
+                    <span>{t('services.cybersecurity.businessFeature3')}</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="h-5 w-5 text-green-500 mr-2" />
-                    <span>Consultoria mensal</span>
+                    <span>{t('services.cybersecurity.businessFeature4')}</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="h-5 w-5 text-green-500 mr-2" />
-                    <span>Backup gerenciado</span>
+                    <span>{t('services.cybersecurity.businessFeature5')}</span>
                   </li>
                 </ul>
-                <Button className="w-full">Solicitar Orçamento</Button>
+                <Button className="w-full">{t('services.cybersecurity.getQuote')}</Button>
               </div>
               
               <div className="border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="text-xl font-semibold mb-3 text-center">Premium</h3>
-                <div className="text-3xl font-bold text-center mb-6">Sob Consulta</div>
+                <h3 className="text-xl font-semibold mb-3 text-center">{t('services.cybersecurity.premium')}</h3>
+                <div className="text-3xl font-bold text-center mb-6">{t('services.cybersecurity.contactForPrice')}</div>
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center">
                     <Check className="h-5 w-5 text-green-500 mr-2" />
-                    <span>Suporte prioritário 24/7</span>
+                    <span>{t('services.cybersecurity.premiumFeature1')}</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="h-5 w-5 text-green-500 mr-2" />
-                    <span>Tempo de resposta em até 1 hora</span>
+                    <span>{t('services.cybersecurity.premiumFeature2')}</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="h-5 w-5 text-green-500 mr-2" />
-                    <span>Monitoramento proativo</span>
+                    <span>{t('services.cybersecurity.premiumFeature3')}</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="h-5 w-5 text-green-500 mr-2" />
-                    <span>Consultoria semanal</span>
+                    <span>{t('services.cybersecurity.premiumFeature4')}</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="h-5 w-5 text-green-500 mr-2" />
-                    <span>Gerenciamento de projetos</span>
+                    <span>{t('services.cybersecurity.premiumFeature5')}</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="h-5 w-5 text-green-500 mr-2" />
-                    <span>Recuperação de desastres</span>
+                    <span>{t('services.cybersecurity.premiumFeature6')}</span>
                   </li>
                 </ul>
-                <Button className="w-full">Solicitar Orçamento</Button>
+                <Button className="w-full">{t('services.cybersecurity.getQuote')}</Button>
               </div>
             </div>
           </div>

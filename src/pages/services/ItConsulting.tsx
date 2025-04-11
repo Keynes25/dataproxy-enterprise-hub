@@ -28,26 +28,21 @@ const ItConsulting = () => {
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h1 className="text-3xl md:text-4xl font-bold mb-6">Criação de Websites</h1>
+              <h1 className="text-3xl md:text-4xl font-bold mb-6">{t('services.itConsulting')}</h1>
               <p className="text-lg text-gray-700 mb-6 text-justify">
-                A Dataproxy oferece serviços completos de criação de websites, desde o design 
-                e desenvolvimento até a implementação e manutenção. Nossos especialistas criam 
-                sites responsivos, atraentes e otimizados que refletem a identidade da sua 
-                marca e ajudam a alcançar seus objetivos de negócio online. Seja um site 
-                institucional simples ou uma plataforma de e-commerce complexa, entregamos 
-                soluções personalizadas para atender às suas necessidades específicas.
+                {t('services.itConsulting.full')}
               </p>
               
               <div className="space-y-6 mb-8">
                 <div className="border-l-4 border-primary-600 pl-4">
-                  <h2 className="text-xl md:text-2xl font-semibold mb-2">Tipos de Websites</h2>
+                  <h2 className="text-xl md:text-2xl font-semibold mb-2">{t('services.itConsulting.types')}</h2>
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Globe className="h-4 w-4 text-primary-600" />
                       </div>
                       <div>
-                        <strong>Sites Institucionais:</strong> <span>Apresente sua empresa e serviços com um site profissional e elegante.</span>
+                        <strong>{t('services.itConsulting.corporate')}:</strong> <span>{t('services.itConsulting.corporateDesc')}</span>
                       </div>
                     </li>
                     <li className="flex items-start">
@@ -55,7 +50,7 @@ const ItConsulting = () => {
                         <ShoppingCart className="h-4 w-4 text-primary-600" />
                       </div>
                       <div>
-                        <strong>Lojas Virtuais:</strong> <span>Venda seus produtos online com uma plataforma de e-commerce completa e segura.</span>
+                        <strong>{t('services.itConsulting.ecommerce')}:</strong> <span>{t('services.itConsulting.ecommerceDesc')}</span>
                       </div>
                     </li>
                     <li className="flex items-start">
@@ -63,7 +58,7 @@ const ItConsulting = () => {
                         <Laptop className="h-4 w-4 text-primary-600" />
                       </div>
                       <div>
-                        <strong>Portais e Sistemas Web:</strong> <span>Automatize processos com sistemas web personalizados para seu negócio.</span>
+                        <strong>{t('services.itConsulting.webPortals')}:</strong> <span>{t('services.itConsulting.webPortalsDesc')}</span>
                       </div>
                     </li>
                     <li className="flex items-start">
@@ -71,50 +66,50 @@ const ItConsulting = () => {
                         <LayoutDashboard className="h-4 w-4 text-primary-600" />
                       </div>
                       <div>
-                        <strong>Landing Pages:</strong> <span>Capture leads e promova produtos específicos com páginas de conversão otimizadas.</span>
+                        <strong>{t('services.itConsulting.landingPages')}:</strong> <span>{t('services.itConsulting.landingPagesDesc')}</span>
                       </div>
                     </li>
                   </ul>
                 </div>
                 
                 <div className="border-l-4 border-primary-600 pl-4">
-                  <h2 className="text-xl font-semibold mb-2">O Que Incluímos</h2>
+                  <h2 className="text-xl font-semibold mb-2">{t('services.itConsulting.included')}</h2>
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Check className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span>Design personalizado e responsivo</span>
+                      <span>{t('services.itConsulting.design')}</span>
                     </li>
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Check className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span>Otimização para mecanismos de busca (SEO)</span>
+                      <span>{t('services.itConsulting.seo')}</span>
                     </li>
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Check className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span>Integração com redes sociais</span>
+                      <span>{t('services.itConsulting.socialMedia')}</span>
                     </li>
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Check className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span>Sistema de gerenciamento de conteúdo (CMS)</span>
+                      <span>{t('services.itConsulting.cms')}</span>
                     </li>
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Check className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span>Hospedagem e domínio (opcional)</span>
+                      <span>{t('services.itConsulting.hosting')}</span>
                     </li>
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Check className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span>Suporte técnico e manutenção</span>
+                      <span>{t('services.itConsulting.support')}</span>
                     </li>
                   </ul>
                 </div>
@@ -125,7 +120,7 @@ const ItConsulting = () => {
             <div className="flex justify-center items-center">
               <img 
                 src="https://images.unsplash.com/photo-1552581234-26160f608093?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
-                alt="Criação de websites" 
+                alt={t('services.itConsulting')}
                 className="rounded-lg shadow-lg w-full object-cover"
                 style={{ maxHeight: '500px' }}
               />
@@ -133,44 +128,44 @@ const ItConsulting = () => {
           </div>
           
           <div className="mt-16">
-            <h2 className="text-2xl font-bold mb-6">Nosso Processo de Desenvolvimento</h2>
+            <h2 className="text-2xl font-bold mb-6">{t('services.itConsulting.process')}</h2>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               <div className="p-6 border rounded-lg relative hover:shadow-md transition-shadow bg-white">
                 <div className="h-12 w-12 rounded-full bg-primary-100 flex items-center justify-center mb-4">
                   <span className="text-primary-600 font-bold text-xl">1</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Briefing e Planejamento</h3>
-                <p className="text-gray-600">Compreendemos suas necessidades e objetivos para criar um plano estratégico.</p>
+                <h3 className="text-xl font-semibold mb-3">{t('services.itConsulting.brief')}</h3>
+                <p className="text-gray-600">{t('services.itConsulting.briefDesc')}</p>
               </div>
               
               <div className="p-6 border rounded-lg relative hover:shadow-md transition-shadow bg-white">
                 <div className="h-12 w-12 rounded-full bg-primary-100 flex items-center justify-center mb-4">
                   <span className="text-primary-600 font-bold text-xl">2</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Design e Protótipo</h3>
-                <p className="text-gray-600">Criamos layouts e wireframes para visualização e aprovação antes do desenvolvimento.</p>
+                <h3 className="text-xl font-semibold mb-3">{t('services.itConsulting.prototype')}</h3>
+                <p className="text-gray-600">{t('services.itConsulting.prototypeDesc')}</p>
               </div>
               
               <div className="p-6 border rounded-lg relative hover:shadow-md transition-shadow bg-white">
                 <div className="h-12 w-12 rounded-full bg-primary-100 flex items-center justify-center mb-4">
                   <span className="text-primary-600 font-bold text-xl">3</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Desenvolvimento</h3>
-                <p className="text-gray-600">Programamos seu site com as melhores tecnologias e práticas de codificação.</p>
+                <h3 className="text-xl font-semibold mb-3">{t('services.itConsulting.development')}</h3>
+                <p className="text-gray-600">{t('services.itConsulting.developmentDesc')}</p>
               </div>
               
               <div className="p-6 border rounded-lg relative hover:shadow-md transition-shadow bg-white">
                 <div className="h-12 w-12 rounded-full bg-primary-100 flex items-center justify-center mb-4">
                   <span className="text-primary-600 font-bold text-xl">4</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Lançamento e Suporte</h3>
-                <p className="text-gray-600">Publicamos seu site e oferecemos suporte contínuo para garantir seu sucesso online.</p>
+                <h3 className="text-xl font-semibold mb-3">{t('services.itConsulting.launch')}</h3>
+                <p className="text-gray-600">{t('services.itConsulting.launchDesc')}</p>
               </div>
             </div>
           </div>
           
           <div className="mt-16">
-            <h2 className="text-2xl font-bold mb-6">Tecnologias que Utilizamos</h2>
+            <h2 className="text-2xl font-bold mb-6">{t('services.itConsulting.technologies')}</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
               <div className="flex items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow">
                 <p className="font-semibold text-gray-700">WordPress</p>

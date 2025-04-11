@@ -28,24 +28,21 @@ const BusinessIntelligence = () => {
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h1 className="text-3xl md:text-4xl font-bold mb-6">Venda de Equipamentos Informáticos</h1>
+              <h1 className="text-3xl md:text-4xl font-bold mb-6">{t('services.businessIntelligence')}</h1>
               <p className="text-lg text-gray-700 mb-6 text-justify">
-                A Dataproxy oferece uma ampla gama de equipamentos informáticos de alta qualidade, 
-                desde computadores e laptops até periféricos e acessórios. Trabalhamos com as 
-                principais marcas do mercado para garantir que sua empresa ou uso pessoal tenha 
-                acesso à melhor tecnologia disponível, com preços competitivos e suporte técnico especializado.
+                {t('services.businessIntelligence.full')}
               </p>
               
               <div className="space-y-6 mb-8">
                 <div className="border-l-4 border-primary-600 pl-4">
-                  <h2 className="text-xl md:text-2xl font-semibold mb-2">Nosso Catálogo</h2>
+                  <h2 className="text-xl md:text-2xl font-semibold mb-2">{t('services.businessIntelligence.catalog')}</h2>
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Laptop className="h-4 w-4 text-primary-600" />
                       </div>
                       <div>
-                        <strong>Computadores e Laptops:</strong> <span>Estações de trabalho, laptops empresariais e computadores para uso pessoal de marcas reconhecidas.</span>
+                        <strong>{t('services.businessIntelligence.computers')}:</strong> <span>{t('services.businessIntelligence.computersDesc')}</span>
                       </div>
                     </li>
                     <li className="flex items-start">
@@ -53,7 +50,7 @@ const BusinessIntelligence = () => {
                         <Monitor className="h-4 w-4 text-primary-600" />
                       </div>
                       <div>
-                        <strong>Monitores e Periféricos:</strong> <span>Monitores de alta definição, teclados, mouses, webcams e outros acessórios para melhorar sua produtividade.</span>
+                        <strong>{t('services.businessIntelligence.monitors')}:</strong> <span>{t('services.businessIntelligence.monitorsDesc')}</span>
                       </div>
                     </li>
                     <li className="flex items-start">
@@ -61,7 +58,7 @@ const BusinessIntelligence = () => {
                         <Printer className="h-4 w-4 text-primary-600" />
                       </div>
                       <div>
-                        <strong>Impressoras e Multifuncionais:</strong> <span>Equipamentos para impressão, digitalização e cópia para ambientes de escritório de qualquer porte.</span>
+                        <strong>{t('services.businessIntelligence.printers')}:</strong> <span>{t('services.businessIntelligence.printersDesc')}</span>
                       </div>
                     </li>
                     <li className="flex items-start">
@@ -69,38 +66,38 @@ const BusinessIntelligence = () => {
                         <Router className="h-4 w-4 text-primary-600" />
                       </div>
                       <div>
-                        <strong>Equipamentos de Rede:</strong> <span>Roteadores, switches, pontos de acesso e toda infraestrutura necessária para sua conectividade.</span>
+                        <strong>{t('services.businessIntelligence.network')}:</strong> <span>{t('services.businessIntelligence.networkDesc')}</span>
                       </div>
                     </li>
                   </ul>
                 </div>
                 
                 <div className="border-l-4 border-primary-600 pl-4">
-                  <h2 className="text-xl font-semibold mb-2">Por Que Comprar Conosco</h2>
+                  <h2 className="text-xl font-semibold mb-2">{t('services.businessIntelligence.whyChooseUs')}</h2>
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Check className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span>Produtos originais com garantia de fábrica</span>
+                      <span>{t('services.businessIntelligence.warranty')}</span>
                     </li>
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Check className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span>Consultoria na escolha do equipamento ideal para sua necessidade</span>
+                      <span>{t('services.businessIntelligence.consultation')}</span>
                     </li>
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Check className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span>Suporte técnico pós-venda</span>
+                      <span>{t('services.businessIntelligence.support')}</span>
                     </li>
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Check className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span>Instalação e configuração dos equipamentos (serviço opcional)</span>
+                      <span>{t('services.businessIntelligence.installation')}</span>
                     </li>
                   </ul>
                 </div>
@@ -111,7 +108,7 @@ const BusinessIntelligence = () => {
             <div className="flex justify-center items-center">
               <img 
                 src="https://images.unsplash.com/photo-1591370874773-6702e8f12fd8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
-                alt="Equipamentos informáticos" 
+                alt={t('services.businessIntelligence')} 
                 className="rounded-lg shadow-lg w-full object-cover"
                 style={{ maxHeight: '500px' }}
               />
@@ -119,7 +116,7 @@ const BusinessIntelligence = () => {
           </div>
           
           <div className="mt-16">
-            <h2 className="text-2xl font-bold mb-6">Marcas Parceiras</h2>
+            <h2 className="text-2xl font-bold mb-6">{t('services.businessIntelligence.partners')}</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
               <div className="flex items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow">
                 <p className="font-semibold text-gray-700">Dell</p>
@@ -143,15 +140,15 @@ const BusinessIntelligence = () => {
           </div>
           
           <div className="mt-16">
-            <h2 className="text-2xl font-bold mb-6">Produtos em Destaque</h2>
+            <h2 className="text-2xl font-bold mb-6">{t('services.businessIntelligence.featured')}</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
                 <div className="h-48 bg-gray-100 flex items-center justify-center">
                   <Laptop className="h-24 w-24 text-gray-400" />
                 </div>
                 <div className="p-4">
-                  <h3 className="font-semibold text-lg">Laptops Empresariais</h3>
-                  <p className="text-gray-600 mt-2">Equipamentos robustos e confiáveis para aumentar a produtividade da sua equipe.</p>
+                  <h3 className="font-semibold text-lg">{t('services.businessIntelligence.businessLaptops')}</h3>
+                  <p className="text-gray-600 mt-2">{t('services.businessIntelligence.businessLaptopsDesc')}</p>
                 </div>
               </div>
               <div className="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
@@ -159,8 +156,8 @@ const BusinessIntelligence = () => {
                   <HardDrive className="h-24 w-24 text-gray-400" />
                 </div>
                 <div className="p-4">
-                  <h3 className="font-semibold text-lg">Soluções de Armazenamento</h3>
-                  <p className="text-gray-600 mt-2">HDDs, SSDs e sistemas NAS para armazenamento seguro dos seus dados.</p>
+                  <h3 className="font-semibold text-lg">{t('services.businessIntelligence.storage')}</h3>
+                  <p className="text-gray-600 mt-2">{t('services.businessIntelligence.storageDesc')}</p>
                 </div>
               </div>
               <div className="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
@@ -168,8 +165,8 @@ const BusinessIntelligence = () => {
                   <Cpu className="h-24 w-24 text-gray-400" />
                 </div>
                 <div className="p-4">
-                  <h3 className="font-semibold text-lg">Servidores</h3>
-                  <p className="text-gray-600 mt-2">Infraestrutura robusta para hospedar seus aplicativos e serviços críticos.</p>
+                  <h3 className="font-semibold text-lg">{t('services.businessIntelligence.servers')}</h3>
+                  <p className="text-gray-600 mt-2">{t('services.businessIntelligence.serversDesc')}</p>
                 </div>
               </div>
             </div>
