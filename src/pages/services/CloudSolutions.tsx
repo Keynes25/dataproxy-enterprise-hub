@@ -28,25 +28,21 @@ const CloudSolutions = () => {
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h1 className="text-3xl md:text-4xl font-bold mb-6">Desenvolvimento de Software</h1>
+              <h1 className="text-3xl md:text-4xl font-bold mb-6">{t('services.cloudSolutions')}</h1>
               <p className="text-lg text-gray-700 mb-6 text-justify">
-                A Dataproxy oferece serviços completos de desenvolvimento de software sob medida, 
-                projetados para atender às necessidades específicas do seu negócio. 
-                Nossa equipe de desenvolvedores especializados cria soluções robustas, 
-                escaláveis e intuitivas que otimizam processos, aumentam a eficiência 
-                e impulsionam o crescimento dos nossos clientes.
+                {t('services.cloudSolutions.full')}
               </p>
               
               <div className="space-y-6 mb-8">
                 <div className="border-l-4 border-primary-600 pl-4">
-                  <h2 className="text-xl md:text-2xl font-semibold mb-2">Nossos Serviços</h2>
+                  <h2 className="text-xl md:text-2xl font-semibold mb-2">{t('services.keyFeatures')}</h2>
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Laptop className="h-4 w-4 text-primary-600" />
                       </div>
                       <div>
-                        <strong>Aplicações Web:</strong> <span>Sistemas web personalizados, portais empresariais e aplicações SaaS com foco na experiência do usuário e segurança.</span>
+                        {t('services.cloudSolutions.feature1')}
                       </div>
                     </li>
                     <li className="flex items-start">
@@ -54,7 +50,7 @@ const CloudSolutions = () => {
                         <Smartphone className="h-4 w-4 text-primary-600" />
                       </div>
                       <div>
-                        <strong>Aplicações Móveis:</strong> <span>Desenvolvimento de apps para iOS e Android que se integram perfeitamente com sua infraestrutura existente.</span>
+                        {t('services.cloudSolutions.feature2')}
                       </div>
                     </li>
                     <li className="flex items-start">
@@ -62,58 +58,50 @@ const CloudSolutions = () => {
                         <Code className="h-4 w-4 text-primary-600" />
                       </div>
                       <div>
-                        <strong>Software Sob Medida:</strong> <span>Soluções empresariais personalizadas que atendem exatamente às necessidades específicas do seu negócio.</span>
-                      </div>
-                    </li>
-                    <li className="flex items-start">
-                      <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
-                        <Globe className="h-4 w-4 text-primary-600" />
-                      </div>
-                      <div>
-                        <strong>Integração de Sistemas:</strong> <span>Conectamos sua nova solução com sistemas existentes para um fluxo de trabalho unificado e eficiente.</span>
+                        {t('services.cloudSolutions.feature3')}
                       </div>
                     </li>
                   </ul>
                 </div>
                 
                 <div className="border-l-4 border-primary-600 pl-4">
-                  <h2 className="text-xl font-semibold mb-2">Nossa Metodologia</h2>
+                  <h2 className="text-xl font-semibold mb-2">{t('services.title')}</h2>
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Check className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span><strong>1. Análise:</strong> Compreensão profunda das necessidades do seu negócio</span>
+                      <span>{t('services.dataManagement')}</span>
                     </li>
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Check className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span><strong>2. Design:</strong> Criação de protótipos e arquitetura de software</span>
+                      <span>{t('services.cloudSolutions')}</span>
                     </li>
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Check className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span><strong>3. Desenvolvimento:</strong> Codificação com as melhores práticas e tecnologias modernas</span>
+                      <span>{t('services.cybersecurity')}</span>
                     </li>
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Check className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span><strong>4. Teste:</strong> Garantia de qualidade rigorosa e testes abrangentes</span>
+                      <span>{t('services.enterpriseSoftware')}</span>
                     </li>
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Check className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span><strong>5. Implementação:</strong> Implantação suave e treinamento completo</span>
+                      <span>{t('services.businessIntelligence')}</span>
                     </li>
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
                         <Check className="h-4 w-4 text-primary-600" />
                       </div>
-                      <span><strong>6. Manutenção:</strong> Suporte contínuo e atualizações evolutivas</span>
+                      <span>{t('services.itConsulting')}</span>
                     </li>
                   </ul>
                 </div>

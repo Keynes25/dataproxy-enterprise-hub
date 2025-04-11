@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
-import { Target, Eye, Heart, Home } from 'lucide-react';
+import { Target, Eye, Heart, ArrowLeft, Home } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -21,20 +21,19 @@ const AboutUs = () => {
       <Navbar />
       <main className="flex-grow pt-24 pb-16">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center mb-10">
-            <h1 className="text-3xl md:text-4xl font-bold text-center md:text-left">
-              {t('about.title')}
-            </h1>
-            <Link to="/" className="mt-4 md:mt-0">
-              <Button variant="outline" className="flex items-center gap-2">
-                <Home className="h-4 w-4" /> Voltar para Página Inicial
-              </Button>
-            </Link>
-          </div>
+          <Link to="/">
+            <Button variant="ghost" className="mb-6">
+              <ArrowLeft className="mr-2 h-4 w-4" /> {t('about.backToHome')}
+            </Button>
+          </Link>
+          
+          <h1 className="text-3xl md:text-4xl font-bold mb-10">
+            {t('about.title')}
+          </h1>
           
           <div className="max-w-4xl mx-auto space-y-8">
             {/* Mission Card */}
-            <Card className="overflow-hidden card-hover hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <Card className="overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <CardHeader className="flex flex-row items-center gap-4 pb-2">
                 <div className="h-12 w-12 rounded-full bg-primary-100 flex items-center justify-center">
                   <Target className="h-6 w-6 text-primary-600" />
@@ -49,7 +48,7 @@ const AboutUs = () => {
             </Card>
             
             {/* Vision Card */}
-            <Card className="overflow-hidden card-hover hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <Card className="overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <CardHeader className="flex flex-row items-center gap-4 pb-2">
                 <div className="h-12 w-12 rounded-full bg-primary-100 flex items-center justify-center">
                   <Eye className="h-6 w-6 text-primary-600" />
@@ -64,7 +63,7 @@ const AboutUs = () => {
             </Card>
             
             {/* Values Card */}
-            <Card className="overflow-hidden card-hover hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <Card className="overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <CardHeader className="flex flex-row items-center gap-4 pb-2">
                 <div className="h-12 w-12 rounded-full bg-primary-100 flex items-center justify-center">
                   <Heart className="h-6 w-6 text-primary-600" />
