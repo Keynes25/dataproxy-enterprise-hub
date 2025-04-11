@@ -163,7 +163,7 @@ const translations = {
     'services.keyFeatures': 'Principais Recursos',
     
     // Service Details
-    'services.dataManagement.full': 'Nossos sistemas de gestão oferecem soluções completas para otimizar processos empresariais, integrar informações e melhorar a eficiência organizacional. Desenvolvemos plataformas personalizadas que automatizam fluxos de trabalho, promovem a colaboração e garantem o controle total sobre as operações, contribuindo para o sucesso sustentável de sua empresa.',
+    'services.dataManagement.full': 'Nossos sistemas de gestão oferecem soluções completas para otimizar processos empresariais, integrar informações e melhorar a eficiência organizacional. Desenvolvemos plataformas personalizadas que automatizam fluxos de trabalho, promovem a colaboração e garantem o controle total sobre as operações, contribuindo para o sucesso sustentável de sua empresas.',
     'services.dataManagement.feature1': 'Soluções de armazenamento e lago de dados empresariais',
     'services.dataManagement.feature2': 'Estruturas de governança e conformidade de dados',
     'services.dataManagement.feature3': 'Gerenciamento de dados mestre e serviços de qualidade de dados',
