@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
-import { ArrowLeft, Code, Laptop, DeviceTablet, Globe, Check } from 'lucide-react';
+import { ArrowLeft, Code, Laptop, Smartphone, Globe, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 
@@ -51,7 +51,7 @@ const CloudSolutions = () => {
                     </li>
                     <li className="flex items-start">
                       <div className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center mr-3 mt-1">
-                        <DeviceTablet className="h-4 w-4 text-primary-600" />
+                        <Smartphone className="h-4 w-4 text-primary-600" />
                       </div>
                       <div>
                         <strong>Aplicações Móveis:</strong> <span>Desenvolvimento de apps para iOS e Android que se integram perfeitamente com sua infraestrutura existente.</span>
