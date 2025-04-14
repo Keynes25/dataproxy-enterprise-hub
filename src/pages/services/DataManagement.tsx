@@ -103,7 +103,9 @@ const DataManagement = () => {
                 </div>
               </div>
               
-              <Button size="lg">{t('contact.getInTouch')}</Button>
+              <Link to="/#contact">
+                <Button size="lg">{t('contact.getInTouch')}</Button>
+              </Link>
             </div>
             <div className="flex justify-center items-center">
               <img 
