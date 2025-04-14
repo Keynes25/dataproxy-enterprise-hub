@@ -15,6 +15,16 @@ const Cybersecurity = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const scrollToContact = () => {
+    // Navigate to homepage and then scroll to contact section
+    window.location.href = '/#contact';
+  };
+
+  const handleQuoteRequest = () => {
+    // Navigate to homepage contact form with query parameter
+    window.location.href = '/#contact';
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -103,7 +113,7 @@ const Cybersecurity = () => {
                 </div>
               </div>
               
-              <Button size="lg">{t('contact.getInTouch')}</Button>
+              <Button size="lg" onClick={scrollToContact}>{t('contact.getInTouch')}</Button>
             </div>
             <div className="flex justify-center items-center">
               <img 
@@ -139,7 +149,7 @@ const Cybersecurity = () => {
                     <span>{t('services.cybersecurity.basicFeature4')}</span>
                   </li>
                 </ul>
-                <Button className="w-full">{t('services.cybersecurity.getQuote')}</Button>
+                <Button className="w-full" onClick={handleQuoteRequest}>{t('services.cybersecurity.getQuote')}</Button>
               </div>
               
               <div className="border rounded-lg p-6 shadow-md bg-primary-50 border-primary-200 relative hover:shadow-lg transition-shadow">
@@ -170,7 +180,7 @@ const Cybersecurity = () => {
                     <span>{t('services.cybersecurity.businessFeature5')}</span>
                   </li>
                 </ul>
-                <Button className="w-full">{t('services.cybersecurity.getQuote')}</Button>
+                <Button className="w-full" onClick={handleQuoteRequest}>{t('services.cybersecurity.getQuote')}</Button>
               </div>
               
               <div className="border rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
@@ -202,7 +212,7 @@ const Cybersecurity = () => {
                     <span>{t('services.cybersecurity.premiumFeature6')}</span>
                   </li>
                 </ul>
-                <Button className="w-full">{t('services.cybersecurity.getQuote')}</Button>
+                <Button className="w-full" onClick={handleQuoteRequest}>{t('services.cybersecurity.getQuote')}</Button>
               </div>
             </div>
           </div>

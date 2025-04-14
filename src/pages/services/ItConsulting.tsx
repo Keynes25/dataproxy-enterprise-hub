@@ -15,6 +15,11 @@ const ItConsulting = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const scrollToContact = () => {
+    // Navigate to homepage and then scroll to contact section
+    window.location.href = '/#contact';
+  };
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -115,7 +120,7 @@ const ItConsulting = () => {
                 </div>
               </div>
               
-              <Button size="lg">{t('contact.getInTouch')}</Button>
+              <Button size="lg" onClick={scrollToContact}>{t('contact.getInTouch')}</Button>
             </div>
             <div className="flex justify-center items-center">
               <img 
