@@ -1,4 +1,3 @@
-
 import React, { createContext, useState, useContext, ReactNode } from 'react';
 
 type Language = 'en' | 'pt';
@@ -48,6 +47,39 @@ const translations = {
     'services.keyFeatures': 'Key Features',
     'about.backToHome': 'Back to Home',
     
+    // About section
+    'about.title': 'About Dataproxy Enterprise',
+    'about.p1': 'Dataproxy is a company established in Mozambique, dedicated to driving the development and growth of its clients through innovative solutions in the field of Information Technology (IT) as well as selling computer equipment.',
+    'about.p2': 'Our mission is to provide services and products that not only meet but also exceed market expectations, thus contributing to advancement and excellence in all our operations.',
+    'about.learnMore': 'Learn More',
+    'features.security': 'Market-leading data security protocols',
+    'features.team': 'Experienced team of IT professionals',
+    'features.solutions': 'Customized business solutions',
+    'features.support': 'Dedicated 24/7 technical support',
+    'features.innovation': 'Continuous innovation and improvement',
+    'features.global': 'Global service delivery capabilities',
+    
+    // Contact section
+    'contact.title': 'Get in Touch',
+    'contact.description': 'Contact our team for information about our services or to request a custom quote.',
+    'contact.getInTouch': 'Get in Touch',
+    'contact.form.title': 'Send Us a Message',
+    'contact.form.name': 'Name',
+    'contact.form.email': 'Email',
+    'contact.form.subject': 'Subject',
+    'contact.form.subject.placeholder': 'How can we help you?',
+    'contact.form.message': 'Message',
+    'contact.form.message.placeholder': 'Tell us about your project...',
+    'contact.form.send': 'Send Message',
+    'contact.info.title': 'Contact Information',
+    'contact.info.visit': 'Visit Us',
+    'contact.info.call': 'Call Us',
+    'contact.info.email': 'Email Us',
+    'contact.info.hours': 'Business Hours',
+    'contact.info.weekdays': 'Monday - Friday: 7:00 AM - 5:00 PM',
+    'contact.info.saturday': 'Saturday: 8:00 AM - 12:00 PM',
+    'contact.info.sunday': 'Sunday: Closed',
+
     // Service Details - Data Management
     'services.dataManagement.full': 'Our services encompass the provision of complete management systems, meticulously designed to meet the specific needs of companies in diverse sectors, including billing, human resources, accounting, inventory management and procurement. These solutions are designed based on a deep understanding of the challenges faced by our customers, aiming to offer efficiency, precision and control at all stages of the process.',
     'services.dataManagement.salesSystem': 'Sales System',
@@ -236,6 +268,39 @@ const translations = {
     'services.backToServices': 'Voltar para Serviços',
     'services.keyFeatures': 'Principais Recursos',
     'about.backToHome': 'Voltar para Página Inicial',
+    
+    // About section
+    'about.title': 'Sobre a Dataproxy Enterprise',
+    'about.p1': 'A Dataproxy é uma empresa estabelecida em Moçambique, dedicada a impulsionar o desenvolvimento e crescimento de seus clientes por meio de soluções inovadoras no campo da Tecnologia da Informação (TI) assim como venda de equipamentos informáticos.',
+    'about.p2': 'Nossa missão é proporcionar serviços e produtos que não apenas atendam, mas também superem as expectativas do mercado, contribuindo assim para o avanço e a excelência em todas as nossas operações.',
+    'about.learnMore': 'Saiba Mais',
+    'features.security': 'Protocolos de segurança de dados líderes de mercado',
+    'features.team': 'Equipe experiente de profissionais de TI',
+    'features.solutions': 'Soluções empresariais personalizadas',
+    'features.support': 'Suporte técnico dedicado 24/7',
+    'features.innovation': 'Inovação e melhoria contínuas',
+    'features.global': 'Capacidades de entrega de serviços globais',
+    
+    // Contact section
+    'contact.title': 'Entre em Contato',
+    'contact.description': 'Entre em contato com nossa equipe para obter informações sobre nossos serviços ou solicitar um orçamento personalizado.',
+    'contact.getInTouch': 'Entre em Contato',
+    'contact.form.title': 'Envie-nos uma Mensagem',
+    'contact.form.name': 'Nome',
+    'contact.form.email': 'E-mail',
+    'contact.form.subject': 'Assunto',
+    'contact.form.subject.placeholder': 'Como podemos ajudá-lo?',
+    'contact.form.message': 'Mensagem',
+    'contact.form.message.placeholder': 'Conte-nos sobre seu projeto...',
+    'contact.form.send': 'Enviar Mensagem',
+    'contact.info.title': 'Informações de Contato',
+    'contact.info.visit': 'Visite-nos',
+    'contact.info.call': 'Ligue para nós',
+    'contact.info.email': 'E-mail',
+    'contact.info.hours': 'Horário de Funcionamento',
+    'contact.info.weekdays': 'Segunda - Sexta: 7:00 - 17:00',
+    'contact.info.saturday': 'Sábado: 8:00 - 12:00',
+    'contact.info.sunday': 'Domingo: Fechado',
     
     // Service Details - Data Management
     'services.dataManagement.full': 'Nossos serviços abrangem o fornecimento de sistemas de gestão completos, meticulosamente projetados para atender às necessidades específicas de empresas em diversos setores, incluindo faturamento, recursos humanos, contabilidade, gestão de inventário e compras. Essas soluções são projetadas com base em uma compreensão profunda dos desafios enfrentados pelos nossos clientes, visando oferecer eficiência, precisão e controle em todas as etapas do processo.',
