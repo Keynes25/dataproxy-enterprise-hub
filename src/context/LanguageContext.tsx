@@ -184,7 +184,7 @@ const translations = {
     'services.businessIntelligence.computers': 'Computers and Laptops',
     'services.businessIntelligence.computersDesc': 'Workstations, business laptops, and personal computers from recognized brands.',
     'services.businessIntelligence.monitors': 'Monitors and Peripherals',
-    'services.businessIntelligence.monitorsDesc': 'High-definition monitors, keyboards, mice, webcams, and other accessories to improve your productivity.',
+    'services.businessIntelligence.monitorsDesc': 'High-definition monitors, keyboards, mice, webcams and other accessories to improve your productivity.',
     'services.businessIntelligence.printers': 'Printers and Multifunction Devices',
     'services.businessIntelligence.printersDesc': 'Equipment for printing, scanning, and copying for office environments of any size.',
     'services.businessIntelligence.network': 'Network Equipment',
@@ -231,6 +231,12 @@ const translations = {
     'services.itConsulting.launch': 'Launch and Support',
     'services.itConsulting.launchDesc': 'We publish your site and offer ongoing support to ensure your online success.',
     'services.itConsulting.technologies': 'Technologies We Use',
+
+    // Footer translations
+    'footer.about': 'Empowering companies with innovative data solutions and enterprise-level IT services.',
+    'footer.quickLinks': 'Quick Links',
+    'footer.ourServices': 'Our Services',
+    'footer.contactUs': 'Contact Us',
   },
   pt: {
     // Navigation
@@ -244,7 +250,7 @@ const translations = {
     // Hero section
     'hero.subtitle': 'Simplificando a Tecnologia,',
     'hero.title': 'Potencializando Soluções',
-    'hero.description': 'A Dataproxy Enterprise oferece soluções de gestão de dados de ponta e serviços de TI que transformam a forma como as empresas aproveitam seus ativos de informaç��o.',
+    'hero.description': 'A Dataproxy Enterprise oferece soluções de gestão de dados de ponta e serviços de TI que transformam a forma como as empresas aproveitam seus ativos de informaço.',
     'hero.solutions': 'Nossas Soluções',
     'hero.contact': 'Contacte-nos',
     'hero.trusted': 'Confiado por líderes da indústria:',
@@ -406,76 +412,4 @@ const translations = {
     'services.businessIntelligence.computers': 'Computadores e Laptops',
     'services.businessIntelligence.computersDesc': 'Estações de trabalho, laptops empresariais e computadores para uso pessoal de marcas reconhecidas.',
     'services.businessIntelligence.monitors': 'Monitores e Periféricos',
-    'services.businessIntelligence.monitorsDesc': 'Monitores de alta definição, teclados, mouses, webcams e outros acessórios para melhorar sua produtividade.',
-    'services.businessIntelligence.printers': 'Impressoras e Multifuncionais',
-    'services.businessIntelligence.printersDesc': 'Equipamentos para impressão, digitalização e cópia para ambientes de escritório de qualquer porte.',
-    'services.businessIntelligence.network': 'Equipamentos de Rede',
-    'services.businessIntelligence.networkDesc': 'Roteadores, switches, pontos de acesso e toda infraestrutura necessária para sua conectividade.',
-    'services.businessIntelligence.whyChooseUs': 'Por Que Comprar Conosco',
-    'services.businessIntelligence.warranty': 'Produtos originais com garantia de fábrica',
-    'services.businessIntelligence.consultation': 'Consultoria na escolha do equipamento ideal para sua necessidade',
-    'services.businessIntelligence.support': 'Suporte técnico pós-venda',
-    'services.businessIntelligence.installation': 'Instalação e configuração dos equipamentos (serviço opcional)',
-    'services.businessIntelligence.partners': 'Marcas Parceiras',
-    'services.businessIntelligence.featured': 'Produtos em Destaque',
-    'services.businessIntelligence.businessLaptops': 'Laptops Empresariais',
-    'services.businessIntelligence.businessLaptopsDesc': 'Equipamentos robustos e confiáveis para aumentar a produtividade da sua equipe.',
-    'services.businessIntelligence.storage': 'Soluções de Armazenamento',
-    'services.businessIntelligence.storageDesc': 'HDDs, SSDs e sistemas NAS para armazenamento seguro dos seus dados.',
-    'services.businessIntelligence.servers': 'Servidores',
-    'services.businessIntelligence.serversDesc': 'Infraestrutura robusta para hospedar seus aplicativos e serviços críticos.',
-    
-    // Service Details - Website Creation
-    'services.itConsulting.full': 'A Dataproxy oferece serviços completos de criação de websites, desde o design e desenvolvimento até a implementação e manutenção. Nossos especialistas criam sites responsivos, atraentes e otimizados que refletem a identidade da sua marca e ajudam a alcançar seus objetivos de negócio online. Seja um site institucional simples ou uma plataforma de e-commerce complexa, entregamos soluções personalizadas para atender às suas necessidades específicas.',
-    'services.itConsulting.types': 'Tipos de Websites',
-    'services.itConsulting.corporate': 'Sites Institucionais',
-    'services.itConsulting.corporateDesc': 'Apresente sua empresa e serviços com um site profissional e elegante.',
-    'services.itConsulting.ecommerce': 'Lojas Virtuais',
-    'services.itConsulting.ecommerceDesc': 'Venda seus produtos online com uma plataforma de e-commerce completa e segura.',
-    'services.itConsulting.webPortals': 'Portais e Sistemas Web',
-    'services.itConsulting.webPortalsDesc': 'Automatize processos com sistemas web personalizados para seu negócio.',
-    'services.itConsulting.landingPages': 'Landing Pages',
-    'services.itConsulting.landingPagesDesc': 'Capture leads e promova produtos específicos com páginas de conversão otimizadas.',
-    'services.itConsulting.included': 'O Que Incluímos',
-    'services.itConsulting.design': 'Design personalizado e responsivo',
-    'services.itConsulting.seo': 'Otimização para mecanismos de busca (SEO)',
-    'services.itConsulting.socialMedia': 'Integração com redes sociais',
-    'services.itConsulting.cms': 'Sistema de gerenciamento de conteúdo (CMS)',
-    'services.itConsulting.hosting': 'Hospedagem e domínio (opcional)',
-    'services.itConsulting.support': 'Suporte técnico e manutenção',
-    'services.itConsulting.process': 'Nosso Processo de Desenvolvimento',
-    'services.itConsulting.brief': 'Briefing e Planejamento',
-    'services.itConsulting.briefDesc': 'Compreendemos suas necessidades e objetivos para criar um plano estratégico.',
-    'services.itConsulting.prototype': 'Design e Protótipo',
-    'services.itConsulting.prototypeDesc': 'Criamos layouts e wireframes para visualização e aprovação antes do desenvolvimento.',
-    'services.itConsulting.development': 'Desenvolvimento',
-    'services.itConsulting.developmentDesc': 'Programamos seu site com as melhores tecnologias e práticas de codificação.',
-    'services.itConsulting.launch': 'Lançamento e Suporte',
-    'services.itConsulting.launchDesc': 'Publicamos seu site e oferecemos suporte contínuo para garantir seu sucesso online.',
-    'services.itConsulting.technologies': 'Tecnologias que Utilizamos',
-  }
-};
-
-const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
-
-export const LanguageProvider: React.FC<{children: ReactNode}> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>('pt'); // Default language is Portuguese
-
-  const t = (key: string): string => {
-    return translations[language][key] || key;
-  };
-
-  return (
-    <LanguageContext.Provider value={{ language, setLanguage, translations, t }}>
-      {children}
-    </LanguageContext.Provider>
-  );
-};
-
-export const useLanguage = (): LanguageContextType => {
-  const context = useContext(LanguageContext);
-  if (context === undefined) {
-    throw new Error('useLanguage must be used within a LanguageProvider');
-  }
-  return context;
-};
+    'services.businessIntelligence.
