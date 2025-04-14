@@ -21,7 +21,7 @@ const translations = {
     
     // Hero section
     'hero.subtitle': 'Simplifying Technology,',
-    'hero.title': ' Empowering Solutions',
+    'hero.title': 'Empowering Solutions',
     'hero.description': 'Dataproxy Enterprise delivers cutting-edge data management solutions and IT services that transform how businesses leverage their information assets.',
     'hero.solutions': 'Our Solutions',
     'hero.contact': 'Contact Us',
@@ -244,7 +244,7 @@ const translations = {
     // Hero section
     'hero.subtitle': 'Simplificando a Tecnologia,',
     'hero.title': 'Potencializando Soluções',
-    'hero.description': 'A Dataproxy Enterprise oferece soluções de gestão de dados de ponta e serviços de TI que transformam a forma como as empresas aproveitam seus ativos de informação.',
+    'hero.description': 'A Dataproxy Enterprise oferece soluções de gestão de dados de ponta e serviços de TI que transformam a forma como as empresas aproveitam seus ativos de informaç��o.',
     'hero.solutions': 'Nossas Soluções',
     'hero.contact': 'Contacte-nos',
     'hero.trusted': 'Confiado por líderes da indústria:',
@@ -323,7 +323,7 @@ const translations = {
     'services.dataManagement.dashboards': 'Painéis e Relatórios',
     'services.dataManagement.dashboardsDesc': 'Acesse painéis interativos e relatórios detalhados para monitorar o desempenho do negócio em tempo real, identificar tendências e detectar oportunidades de melhoria com facilidade.',
     'services.dataManagement.automation': 'Automação',
-    'services.dataManagement.automationDesc': 'Automatize processos manuais repetitivos para aumentar a eficiência, reduzir erros e permitir que sua equipe se concentre em atividades estratégicas que agregam mais valor ao negócio.',
+    'services.dataManagement.automationDesc': 'Automatize processos manuais repetitivos para aumentar a eficiência, reduzir erros, e permitir que sua equipe se concentre em atividades estratégicas que agregam mais valor ao negócio.',
     
     // Service Details - Software Development
     'services.cloudSolutions.full': 'Nossos serviços de desenvolvimento de software personalizado são projetados para criar soluções digitais sob medida que atendam às necessidades específicas do seu negócio. De aplicativos móveis a sistemas de nível empresarial, combinamos tecnologia de ponta com design inovador para entregar software que melhora a eficiência, aprimora a experiência do usuário e impulsiona seu negócio.',
