@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import Navbar from '@/components/layout/Navbar';
@@ -172,22 +171,52 @@ const ItConsulting = () => {
           <div className="mt-16">
             <h2 className="text-2xl font-bold mb-6">{t('services.itConsulting.technologies')}</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
-              <div className="flex items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow">
+              <div className="flex flex-col items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow">
+                <img 
+                  src="https://cdn.worldvectorlogo.com/logos/wordpress-blue.svg" 
+                  alt="WordPress" 
+                  className="h-16 mb-3 object-contain"
+                />
                 <p className="font-semibold text-gray-700">WordPress</p>
               </div>
-              <div className="flex items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow">
+              <div className="flex flex-col items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow">
+                <img 
+                  src="https://cdn.worldvectorlogo.com/logos/shopify.svg" 
+                  alt="Shopify" 
+                  className="h-16 mb-3 object-contain"
+                />
                 <p className="font-semibold text-gray-700">Shopify</p>
               </div>
-              <div className="flex items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow">
+              <div className="flex flex-col items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow">
+                <img 
+                  src="https://cdn.worldvectorlogo.com/logos/woocommerce.svg" 
+                  alt="WooCommerce" 
+                  className="h-16 mb-3 object-contain"
+                />
                 <p className="font-semibold text-gray-700">WooCommerce</p>
               </div>
-              <div className="flex items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow">
+              <div className="flex flex-col items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow">
+                <img 
+                  src="https://cdn.worldvectorlogo.com/logos/react-2.svg" 
+                  alt="React" 
+                  className="h-16 mb-3 object-contain"
+                />
                 <p className="font-semibold text-gray-700">React</p>
               </div>
-              <div className="flex items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow">
+              <div className="flex flex-col items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow">
+                <img 
+                  src="https://cdn.worldvectorlogo.com/logos/php-1.svg" 
+                  alt="PHP" 
+                  className="h-16 mb-3 object-contain"
+                />
                 <p className="font-semibold text-gray-700">PHP</p>
               </div>
-              <div className="flex items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow">
+              <div className="flex flex-col items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow">
+                <img 
+                  src="https://cdn.worldvectorlogo.com/logos/laravel-2.svg" 
+                  alt="Laravel" 
+                  className="h-16 mb-3 object-contain"
+                />
                 <p className="font-semibold text-gray-700">Laravel</p>
               </div>
             </div>
