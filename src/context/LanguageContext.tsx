@@ -237,6 +237,7 @@ const translations = {
     'footer.quickLinks': 'Quick Links',
     'footer.ourServices': 'Our Services',
     'footer.contactUs': 'Contact Us',
+    'footer.rights': 'All rights reserved.',
   },
   pt: {
     // Navigation
@@ -412,4 +413,83 @@ const translations = {
     'services.businessIntelligence.computers': 'Computadores e Laptops',
     'services.businessIntelligence.computersDesc': 'Estações de trabalho, laptops empresariais e computadores para uso pessoal de marcas reconhecidas.',
     'services.businessIntelligence.monitors': 'Monitores e Periféricos',
-    'services.businessIntelligence.
+    'services.businessIntelligence.monitorsDesc': 'Monitores de alta definição, teclados, mouses, webcams e outros acessórios para melhorar sua produtividade.',
+    'services.businessIntelligence.printers': 'Impressoras e Dispositivos Multifuncionais',
+    'services.businessIntelligence.printersDesc': 'Equipamentos para impressão, digitalização e cópia para ambientes de escritório de qualquer tamanho.',
+    'services.businessIntelligence.network': 'Equipamentos de Rede',
+    'services.businessIntelligence.networkDesc': 'Roteadores, switches, pontos de acesso e toda a infraestrutura necessária para sua conectividade.',
+    'services.businessIntelligence.whyChooseUs': 'Por Que Comprar Conosco',
+    'services.businessIntelligence.warranty': 'Produtos originais com garantia de fábrica',
+    'services.businessIntelligence.consultation': 'Consultoria na escolha do equipamento ideal para sua necessidade',
+    'services.businessIntelligence.support': 'Suporte técnico pós-venda',
+    'services.businessIntelligence.installation': 'Instalação e configuração de equipamentos (serviço opcional)',
+    'services.businessIntelligence.partners': 'Marcas Parceiras',
+    'services.businessIntelligence.featured': 'Produtos em Destaque',
+    'services.businessIntelligence.businessLaptops': 'Laptops Empresariais',
+    'services.businessIntelligence.businessLaptopsDesc': 'Equipamentos robustos e confiáveis para aumentar a produtividade da sua equipe.',
+    'services.businessIntelligence.storage': 'Soluções de Armazenamento',
+    'services.businessIntelligence.storageDesc': 'HDDs, SSDs e sistemas NAS para armazenamento seguro dos seus dados.',
+    'services.businessIntelligence.servers': 'Servidores',
+    'services.businessIntelligence.serversDesc': 'Infraestrutura robusta para hospedar suas aplicações e serviços críticos.',
+    
+    // Service Details - Website Creation
+    'services.itConsulting.full': 'A Dataproxy oferece serviços abrangentes de criação de websites, desde o design e desenvolvimento até a implementação e manutenção. Nossos especialistas criam sites responsivos, atraentes e otimizados que refletem a identidade da sua marca e ajudam a alcançar seus objetivos de negócios online. Seja um simples site corporativo ou uma complexa plataforma de e-commerce, entregamos soluções personalizadas para atender às suas necessidades específicas.',
+    'services.itConsulting.types': 'Tipos de Website',
+    'services.itConsulting.corporate': 'Sites Corporativos',
+    'services.itConsulting.corporateDesc': 'Apresente sua empresa e serviços com um site profissional e elegante.',
+    'services.itConsulting.ecommerce': 'E-commerce',
+    'services.itConsulting.ecommerceDesc': 'Venda seus produtos online com uma plataforma de e-commerce completa e segura.',
+    'services.itConsulting.webPortals': 'Portais Web e Sistemas',
+    'services.itConsulting.webPortalsDesc': 'Automatize processos com sistemas web personalizados para seu negócio.',
+    'services.itConsulting.landingPages': 'Landing Pages',
+    'services.itConsulting.landingPagesDesc': 'Capture leads e promova produtos específicos com páginas de conversão otimizadas.',
+    'services.itConsulting.included': 'O Que Incluímos',
+    'services.itConsulting.design': 'Design responsivo e personalizado',
+    'services.itConsulting.seo': 'Otimização para motores de busca (SEO)',
+    'services.itConsulting.socialMedia': 'Integração com redes sociais',
+    'services.itConsulting.cms': 'Sistema de gerenciamento de conteúdo (CMS)',
+    'services.itConsulting.hosting': 'Hospedagem e domínio (opcional)',
+    'services.itConsulting.support': 'Suporte técnico e manutenção',
+    'services.itConsulting.process': 'Nosso Processo de Desenvolvimento',
+    'services.itConsulting.brief': 'Briefing e Planejamento',
+    'services.itConsulting.briefDesc': 'Entendemos suas necessidades e objetivos para criar um plano estratégico.',
+    'services.itConsulting.prototype': 'Design e Protótipo',
+    'services.itConsulting.prototypeDesc': 'Criamos layouts e wireframes para visualização e aprovação antes do desenvolvimento.',
+    'services.itConsulting.development': 'Desenvolvimento',
+    'services.itConsulting.developmentDesc': 'Programamos seu site com as melhores tecnologias e práticas de codificação.',
+    'services.itConsulting.launch': 'Lançamento e Suporte',
+    'services.itConsulting.launchDesc': 'Publicamos seu site e oferecemos suporte contínuo para garantir seu sucesso online.',
+    'services.itConsulting.technologies': 'Tecnologias que Utilizamos',
+    
+    // Footer translations
+    'footer.about': 'Capacitando empresas com soluções inovadoras de dados e serviços de TI de nível empresarial.',
+    'footer.quickLinks': 'Links Rápidos',
+    'footer.ourServices': 'Nossos Serviços',
+    'footer.contactUs': 'Contate-nos',
+    'footer.rights': 'Todos os direitos reservados.',
+  }
+};
+
+const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+
+export const LanguageProvider = ({ children }: { children: ReactNode }) => {
+  const [language, setLanguage] = useState<Language>('en');
+
+  const t = (key: string): string => {
+    return translations[language][key] || key;
+  };
+
+  return (
+    <LanguageContext.Provider value={{ language, setLanguage, translations, t }}>
+      {children}
+    </LanguageContext.Provider>
+  );
+};
+
+export const useLanguage = (): LanguageContextType => {
+  const context = useContext(LanguageContext);
+  if (context === undefined) {
+    throw new Error('useLanguage must be used within a LanguageProvider');
+  }
+  return context;
+};
