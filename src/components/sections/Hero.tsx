@@ -1,12 +1,17 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
-import { Link } from 'react-router-dom';
 
 const Hero = () => {
   const { t } = useLanguage();
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.querySelector(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <section 
@@ -30,16 +35,21 @@ const Hero = () => {
               {t('hero.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/services">
-                <Button size="lg" className="bg-primary-600 hover:bg-primary-700">
-                  {t('hero.solutions')} <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <Link to="#contact">
-                <Button size="lg" variant="outline" className="border-primary-600 text-primary-600 hover:bg-primary-50">
-                  {t('hero.contact')}
-                </Button>
-              </Link>
+              <Button 
+                size="lg" 
+                className="bg-primary-600 hover:bg-primary-700"
+                onClick={() => scrollToSection('#services')}
+              >
+                {t('hero.solutions')} <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="border-primary-600 text-primary-600 hover:bg-primary-50"
+                onClick={() => scrollToSection('#contact')}
+              >
+                {t('hero.contact')}
+              </Button>
             </div>
 
             <div className="mt-12 flex items-center">
@@ -73,4 +83,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
