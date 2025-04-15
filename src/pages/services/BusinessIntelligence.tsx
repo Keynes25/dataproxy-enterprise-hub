@@ -120,23 +120,47 @@ const BusinessIntelligence = () => {
           <div className="mt-16">
             <h2 className="text-2xl font-bold mb-6">{t('services.businessIntelligence.partners')}</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
-              <div className="flex items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow">
-                <p className="font-semibold text-gray-700">Dell</p>
+              <div className="flex items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow h-20">
+                <img 
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Dell_Logo.png/800px-Dell_Logo.png" 
+                  alt="Dell" 
+                  className="h-8 object-contain"
+                />
               </div>
-              <div className="flex items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow">
-                <p className="font-semibold text-gray-700">HP</p>
+              <div className="flex items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow h-20">
+                <img 
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/HP_logo_2012.svg/1200px-HP_logo_2012.svg.png" 
+                  alt="HP" 
+                  className="h-8 object-contain"
+                />
               </div>
-              <div className="flex items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow">
-                <p className="font-semibold text-gray-700">Lenovo</p>
+              <div className="flex items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow h-20">
+                <img 
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Lenovo_logo_2015.svg/2560px-Lenovo_logo_2015.svg.png" 
+                  alt="Lenovo" 
+                  className="h-8 object-contain"
+                />
               </div>
-              <div className="flex items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow">
-                <p className="font-semibold text-gray-700">Apple</p>
+              <div className="flex items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow h-20">
+                <img 
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1667px-Apple_logo_black.svg.png" 
+                  alt="Apple" 
+                  className="h-10 object-contain"
+                />
               </div>
-              <div className="flex items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow">
-                <p className="font-semibold text-gray-700">Samsung</p>
+              <div className="flex items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow h-20">
+                <img 
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/2560px-Samsung_Logo.svg.png" 
+                  alt="Samsung" 
+                  className="h-6 object-contain"
+                />
               </div>
-              <div className="flex items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow">
-                <p className="font-semibold text-gray-700">Cisco</p>
+              <div className="flex items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow h-20">
+                <img 
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/1200px-Cisco_logo_blue_2016.svg.png" 
+                  alt="Cisco" 
+                  className="h-8 object-contain"
+                />
               </div>
             </div>
           </div>
@@ -145,8 +169,12 @@ const BusinessIntelligence = () => {
             <h2 className="text-2xl font-bold mb-6">{t('services.businessIntelligence.featured')}</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="h-48 bg-gray-100 flex items-center justify-center">
-                  <Laptop className="h-24 w-24 text-gray-400" />
+                <div className="h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                    alt="Business Laptops"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="p-4">
                   <h3 className="font-semibold text-lg">{t('services.businessIntelligence.businessLaptops')}</h3>
@@ -154,8 +182,12 @@ const BusinessIntelligence = () => {
                 </div>
               </div>
               <div className="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="h-48 bg-gray-100 flex items-center justify-center">
-                  <HardDrive className="h-24 w-24 text-gray-400" />
+                <div className="h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                    alt="Storage Solutions"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="p-4">
                   <h3 className="font-semibold text-lg">{t('services.businessIntelligence.storage')}</h3>
@@ -163,8 +195,12 @@ const BusinessIntelligence = () => {
                 </div>
               </div>
               <div className="border rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="h-48 bg-gray-100 flex items-center justify-center">
-                  <Cpu className="h-24 w-24 text-gray-400" />
+                <div className="h-48 bg-gray-100 flex items-center justify-center overflow-hidden">
+                  <img 
+                    src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                    alt="Servers"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="p-4">
                   <h3 className="font-semibold text-lg">{t('services.businessIntelligence.servers')}</h3>
