@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import Navbar from '@/components/layout/Navbar';
@@ -12,7 +11,6 @@ const AboutUs = () => {
   const { t } = useLanguage();
   
   useEffect(() => {
-    // Scroll to top when page loads
     window.scrollTo(0, 0);
   }, []);
 
@@ -26,10 +24,6 @@ const AboutUs = () => {
               <ArrowLeft className="mr-2 h-4 w-4" /> {t('about.backToHome')}
             </Button>
           </Link>
-          
-          <h1 className="text-3xl md:text-4xl font-bold mb-10">
-            {t('about.title')}
-          </h1>
           
           <div className="max-w-4xl mx-auto space-y-8">
             {/* Mission Card */}
