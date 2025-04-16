@@ -173,7 +173,7 @@ const ItConsulting = () => {
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
               <div className="flex flex-col items-center justify-center p-4 border rounded-lg bg-white hover:shadow-md transition-shadow">
                 <img 
-                  src="https://cdn.worldvectorlogo.com/logos/wordpress-blue.svg" 
+                  src="https://cdn.worldvectorlogo.com/logos/wordpress-icon-1.svg" 
                   alt="WordPress" 
                   className="h-16 mb-3 object-contain"
                 />
