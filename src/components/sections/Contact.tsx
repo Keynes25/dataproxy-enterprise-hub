@@ -18,6 +18,7 @@ import {
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
+import emailjs from 'emailjs-com';
 
 // Esquema de validação para o formulário
 const formSchema = z.object({
@@ -26,6 +27,11 @@ const formSchema = z.object({
   subject: z.string().min(3, { message: 'Assunto é obrigatório' }),
   message: z.string().min(10, { message: 'Mensagem deve ter pelo menos 10 caracteres' }),
 });
+
+// Configuração do EmailJS
+const EMAILJS_SERVICE_ID = 'default_service'; // Substitua pelo seu Service ID do EmailJS
+const EMAILJS_TEMPLATE_ID = 'template_contact_form'; // Substitua pelo seu Template ID do EmailJS
+const EMAILJS_USER_ID = 'user_yourUserID'; // Substitua pelo seu User ID do EmailJS
 
 const Contact = () => {
   const { t } = useLanguage();
@@ -63,12 +69,25 @@ const Contact = () => {
     setIsSubmitting(true);
     
     try {
-      console.log('Enviando email para suporte@dataproxy.co.mz com os dados:', values);
-      // Aqui você implementaria a lógica de envio do email
-      // Normalmente isso seria feito através de uma API backend
+      // Preparar os dados para enviar por email
+      const templateParams = {
+        from_name: values.name,
+        from_email: values.email,
+        subject: values.subject,
+        message: values.message,
+        to_email: 'suporte@dataproxy.co.mz',
+        g_recaptcha_response: captchaValue
+      };
       
-      // Simular envio bem-sucedido
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      console.log('Enviando email para suporte@dataproxy.co.mz com os dados:', templateParams);
+      
+      // Enviar email usando EmailJS
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        templateParams,
+        EMAILJS_USER_ID
+      );
       
       toast({
         title: "Mensagem enviada",
@@ -238,7 +257,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
   );
 };
 
