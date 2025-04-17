@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu } from 'lucide-react';
@@ -31,8 +30,11 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center">
             <a href="/" className="flex items-center">
-              <span className="text-2xl font-bold text-primary-600">Dataproxy</span>
-              <span className="text-2xl font-light text-gray-800">Enterprise</span>
+              <img 
+                src="/logo.png" 
+                alt="DataProxy Logo" 
+                className="h-10 mr-2" 
+              />
             </a>
           </div>
 
